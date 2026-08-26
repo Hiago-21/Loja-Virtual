@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "nome": "Cyberpunk 2077",
+    "genero": "RPG",
+    "descricao": "Explore Night City, uma megalopolis obcecada por poder, glamour e modificacoes corporais, em uma aventura narrativa de mundo aberto.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Intel Core i7-6700 ou Ryzen 5 1600, 12 GB RAM, GTX 1060 6 GB ou RX 580 8 GB, 70 GB SSD",
+      "recomendados": "Windows 10 64-bit, Intel Core i7-12700 ou Ryzen 7 7800X3D, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 70 GB SSD"
+    },
+    "preco": 149.90,
+    "imagem": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": 2,
+    "nome": "Elden Ring",
+    "genero": "Acao",
+    "descricao": "Desbrave as Terras Intermedias em uma fantasia sombria criada em parceria por Hidetaka Miyazaki e George R. R. Martin.",
+    "anoLancamento": 2022,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Core i5-8400 ou Ryzen 3 3300X, 12 GB RAM, GTX 1060 3 GB ou RX 580 4 GB, 60 GB",
+      "recomendados": "Windows 11, Intel Core i7-8700K ou Ryzen 5 3600X, 16 GB RAM, GTX 1070 8 GB ou Vega 56 8 GB, 60 GB"
+    },
+    "preco": 229.90,
+    "imagem": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": 3,
+    "nome": "Stardew Valley",
+    "genero": "Indie",
+    "descricao": "Troque o ritmo da cidade pela vida no campo. Cultive, pesque, construa sua casa e forme uma comunidade do seu jeito.",
+    "anoLancamento": 2016,
+    "requisitos": {
+      "minimos": "Windows 10, processador de 2 GHz, 2 GB RAM, 256 MB de memoria de video, 500 MB de armazenamento",
+      "recomendados": "Windows 10, processador de 2.5 GHz, 4 GB RAM, 512 MB de memoria de video, 1 GB de armazenamento"
+    },
+    "preco": 39.90,
+    "imagem": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": 4,
+    "nome": "Baldur's Gate 3",
+    "genero": "RPG",
+    "descricao": "Reuna seu grupo e escreva uma historia de amizade, traicao e aventura em um RPG de fantasia baseado em D&D.",
+    "anoLancamento": 2023,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Intel i5-4690 ou FX 8350, 8 GB RAM, GTX 970 ou RX 480, 150 GB SSD",
+      "recomendados": "Windows 10 64-bit, Intel i7-8700K ou Ryzen 5 3600, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 150 GB SSD"
+    },
+    "preco": 199.90,
+    "imagem": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": 5,
+    "nome": "Hades",
+    "genero": "Roguelike",
+    "descricao": "Lute para escapar do submundo em um roguelike eletrizante, onde cada tentativa revela uma nova parte da historia.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 7 SP1, Dual Core 2.4 GHz, 4 GB RAM, 1 GB de memoria de video, 15 GB de armazenamento",
+      "recomendados": "Windows 10, Dual Core 3.0 GHz+, 8 GB RAM, 2 GB de memoria de video, 15 GB de armazenamento"
+    },
+    "preco": 74.90,
+    "imagem": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": 6,
+    "nome": "Forza Horizon 5",
+    "genero": "Corrida",
+    "descricao": "Acelere por paisagens vibrantes do Mexico em um festival automotivo aberto, social e cheio de descobertas.",
+    "anoLancamento": 2021,
+    "requisitos": {
+      "minimos": "Windows 10, Intel i5-4460 ou Ryzen 3 1200, 8 GB RAM, GTX 970 ou RX 470, 110 GB",
+      "recomendados": "Windows 10, Intel i5-8400 ou Ryzen 5 1500X, 16 GB RAM, GTX 1070 ou RX 590, 110 GB"
+    },
+    "preco": 249.90,
+    "imagem": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=85"
+  }
+]

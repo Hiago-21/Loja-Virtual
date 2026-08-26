@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteamGrid | Jogos para PC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Steam<span>Grid</span></a>
+      <nav class="nav-links" aria-label="Navegacao principal">
+        <a href="index.html">Loja</a>
+        <a href="como-fiz.html">Como fiz</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Alternar tema">☼</button>
+        <a class="cart-link" href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PC / selecao curada</p>
+        <h1>Jogos que pedem mais uma fase.</h1>
+        <p class="hero-copy">Uma vitrine compacta para encontrar sua proxima grande aventura. Explore por genero ou procure direto pelo nome.</p>
+      </div>
+      <p class="hero-note">Catalogo atualizado via JSON, carrinho persistente e uma experiencia pronta para demonstrar cada etapa do projeto.</p>
+    </section>
+    <section class="toolbar" aria-label="Filtros de produtos">
+      <div class="search"><input id="search-input" type="search" placeholder="Buscar por nome ou genero..." aria-label="Buscar jogos"></div>
+      <div class="filters" id="genre-filters"></div>
+    </section>
+    <section>
+      <div class="section-heading"><h2>Em destaque</h2><span id="result-count"></span></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>SteamGrid / projeto de bootcamp</span><span>Jogos digitais para PC</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
