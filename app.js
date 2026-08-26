@@ -122,6 +122,12 @@ function renderCart() {
   }));
 }
 
+function setupCheckout() {
+  const form = document.querySelector(".form");
+  if (!form) return;
+  form.addEventListener("submit", () => saveCartIds([]));
+}
+
 async function loadProducts() {
   try {
     // fetch simula uma API de Headless Commerce e mantém os dados fora do HTML.
@@ -140,4 +146,5 @@ async function loadProducts() {
 
 setupTheme();
 updateCartCount();
+setupCheckout();
 loadProducts();
