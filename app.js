@@ -125,7 +125,95 @@ function renderCart() {
 function setupCheckout() {
   const form = document.querySelector(".form");
   if (!form) return;
-  form.addEventListener("submit", () => saveCartIds([]));
+  const paymentSelect = form.querySelector("[name=pagamento]");
+  const details = document.querySelector("#payment-details");
+  let pixTimer;
+  const getTotal = () => products.filter((product) => getCartIds().includes(product.id)).reduce((total, product) => total + product.preco, 0);
+  const formatTime = (seconds) => `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
+  const getInterestRate = (count) => count === 1 ? 0 : Math.min(0.02 * (count - 1), 0.22);
+  const formatCardNumber = (value) => value.replace(/\D/g, "").slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
+  const formatExpiry = (value) => {
+    const digits = value.replace(/\D/g, "").slice(0, 4);
+    return digits.length > 2 ? `${digits.slice(0, 2)}/${digits.slice(2)}` : digits;
+  };
+
+  const updateBoletoCustomer = () => {
+    if (paymentSelect.value !== "boleto") return;
+    const customerName = form.elements.nome.value.trim();
+    const customerEmail = form.elements.email.value.trim();
+    if (!customerName || !customerEmail) {
+      details.innerHTML = `<div class="payment-panel boleto-required"><strong>Preencha seu nome e e-mail para gerar o boleto.</strong></div>`;
+      return;
+    }
+    if (!details.querySelector("#boleto")) {
+      renderPaymentDetails();
+      return;
+    }
+    const name = details.querySelector("#boleto-name");
+    const email = details.querySelector("#boleto-email");
+    if (name) name.textContent = customerName;
+    if (email) email.textContent = customerEmail;
+  };
+
+  const renderPaymentDetails = () => {
+    clearInterval(pixTimer);
+    details.innerHTML = "";
+    if (paymentSelect.value === "cartao") {
+      const total = getTotal();
+      details.innerHTML = `<div class="payment-panel card-panel"><h2>Dados do cartão</h2><label>Número do cartão<input required type="text" inputmode="numeric" name="numero-cartao" placeholder="0000 0000 0000 0000" maxlength="19"></label><div class="form-row"><label>Validade<input required type="text" name="validade-cartao" placeholder="MM/AA" maxlength="5"></label><label>CVV<input required type="text" name="cvv-cartao" inputmode="numeric" placeholder="123" maxlength="4"></label></div><div class="installment-control"><label for="installments">Quantidade de parcelas</label><div class="installment-input-row"><input id="installments" type="number" name="parcelas" min="1" max="12" value="1" required><span>de 1 a 12 parcelas</span></div><div class="installment-summary" id="installment-summary"></div></div></div>`;
+      const cardNumber = details.querySelector("[name=numero-cartao]");
+      const expiry = details.querySelector("[name=validade-cartao]");
+      const cvv = details.querySelector("[name=cvv-cartao]");
+      cardNumber.addEventListener("input", () => { cardNumber.value = formatCardNumber(cardNumber.value); });
+      expiry.addEventListener("input", () => { expiry.value = formatExpiry(expiry.value); });
+      cvv.addEventListener("input", () => { cvv.value = cvv.value.replace(/\D/g, "").slice(0, 4); });
+      const installments = details.querySelector("#installments");
+      const summary = details.querySelector("#installment-summary");
+      const updateInstallmentSummary = () => {
+        const count = Math.min(12, Math.max(1, Number(installments.value) || 1));
+        installments.value = count;
+        const rate = getInterestRate(count);
+        const finalTotal = total * (1 + rate);
+        summary.innerHTML = `<strong>${count}x de ${formatPrice(finalTotal / count)}</strong><span>${rate ? `${(rate * 100).toFixed(0)}% de juros` : "Sem juros"} · Total: ${formatPrice(finalTotal)}</span>`;
+      };
+      installments.addEventListener("input", updateInstallmentSummary);
+      updateInstallmentSummary();
+      return;
+    }
+    if (paymentSelect.value === "pix") {
+      let secondsLeft = 300;
+      details.innerHTML = `<div class="payment-panel pix-panel"><h2>Pagamento via Pix</h2><div class="qr-code" role="img" aria-label="QR Code genérico para pagamento Pix"><span></span></div><p class="payment-code">PIX-GENERICO-STEAMGRID-2026</p><p>Escaneie o código ou use o código acima.</p><div class="pix-timer"><span>Tempo para pagar</span><strong id="pix-countdown">05:00</strong></div></div>`;
+      const countdown = details.querySelector("#pix-countdown");
+      pixTimer = setInterval(() => {
+        secondsLeft -= 1;
+        countdown.textContent = formatTime(Math.max(secondsLeft, 0));
+        if (secondsLeft <= 0) {
+          clearInterval(pixTimer);
+          details.querySelector(".payment-code").textContent = "Prazo Pix encerrado. Gere um novo código.";
+        }
+      }, 1000);
+      return;
+    }
+    if (paymentSelect.value === "boleto") {
+      const customerName = form.elements.nome.value.trim();
+      const customerEmail = form.elements.email.value.trim();
+      if (!customerName || !customerEmail) {
+        updateBoletoCustomer();
+        return;
+      }
+      details.innerHTML = `<div class="payment-panel boleto-panel" id="boleto"><h2>Boleto bancário</h2><div class="boleto-customer"><p><strong>Nome:</strong> <span id="boleto-name">${customerName}</span></p><p><strong>E-mail:</strong> <span id="boleto-email">${customerEmail}</span></p></div><p>Vencimento: ${new Date(Date.now() + 86400000).toLocaleDateString("pt-BR")}</p><p>Valor: <strong>${formatPrice(getTotal())}</strong></p><p class="barcode">|||| ||| |||| | ||| || ||||</p><p class="payment-code">34191.79001 01043.510047 91020.150008 1 98760000000000</p><button class="secondary-button" id="print-boleto" type="button">Imprimir boleto</button></div>`;
+      details.querySelector("#print-boleto").addEventListener("click", () => window.print());
+    }
+  };
+
+  paymentSelect.addEventListener("change", renderPaymentDetails);
+  form.elements.nome.addEventListener("input", updateBoletoCustomer);
+  form.elements.email.addEventListener("input", updateBoletoCustomer);
+  form.addEventListener("submit", () => {
+    saveCartIds([]);
+    clearInterval(pixTimer);
+  });
+  renderPaymentDetails();
 }
 
 async function loadProducts() {
@@ -138,6 +226,7 @@ async function loadProducts() {
     renderProducts(products);
     renderProductDetail();
     renderCart();
+    setupCheckout();
   } catch (error) {
     const target = document.querySelector("#product-grid, #product-detail, #cart-list");
     if (target) target.innerHTML = `<div class="empty-state"><h3>Não foi possível carregar o catálogo.</h3><p>${error.message}</p></div>`;
@@ -146,5 +235,4 @@ async function loadProducts() {
 
 setupTheme();
 updateCartCount();
-setupCheckout();
 loadProducts();

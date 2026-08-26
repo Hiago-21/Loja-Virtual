@@ -104,6 +104,32 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .form { display: grid; gap: 16px; margin-top: 30px; }
 .form label { display: grid; gap: 7px; font-weight: 800; font-size: .9rem; }
 .form input, .form select { border: 1px solid var(--line); background: var(--surface); color: var(--text); padding: 13px; border-radius: 4px; }
+.payment-details { display: grid; }
+.payment-panel { display: grid; gap: 14px; border: 1px solid var(--line); background: var(--surface-muted); padding: 22px; }
+.payment-panel h2 { margin: 0; font-size: 1.25rem; }
+.boleto-required { color: var(--accent); }
+.payment-panel label { background: var(--surface); padding: 12px; border: 1px solid var(--line); }
+.payment-panel input, .payment-panel select { width: 100%; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.installments-title { margin: 0 0 10px; font-size: .95rem; }
+.installment-control { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 16px; }
+.installment-control > label { padding: 0; border: 0; background: transparent; }
+.installment-input-row { display: flex; align-items: center; gap: 12px; }
+.installment-input-row input { width: 92px; font-size: 1.15rem; font-weight: 900; text-align: center; }
+.installment-input-row span { color: var(--muted); font-size: .85rem; font-weight: 400; }
+.installment-summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--accent); background: var(--surface); }
+.installment-summary strong { color: var(--accent); font-size: 1.15rem; }
+.installment-summary span { color: var(--muted); font-size: .82rem; text-align: right; }
+.boleto-customer { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.boleto-customer p { margin: 0; overflow-wrap: anywhere; }
+.qr-code { width: 174px; height: 174px; margin: 0 auto; border: 10px solid #fff; background-color: #fff; background-image: linear-gradient(90deg, #111 12%, transparent 12% 22%, #111 22% 35%, transparent 35% 45%, #111 45% 58%, transparent 58% 70%, #111 70% 79%, transparent 79%), linear-gradient(#111 12%, transparent 12% 24%, #111 24% 38%, transparent 38% 49%, #111 49% 63%, transparent 63% 76%, #111 76% 88%, transparent 88%); background-size: 37px 37px; box-shadow: inset 0 0 0 8px #111; }
+.payment-code { overflow-wrap: anywhere; font-family: monospace; font-size: .82rem; text-align: center; color: var(--text); margin: 0; }
+.pix-panel > p:not(.payment-code) { text-align: center; color: var(--muted); margin: 0; }
+.pix-timer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 14px; color: var(--muted); }
+.pix-timer strong { color: var(--accent); font-size: 1.4rem; font-variant-numeric: tabular-nums; }
+.barcode { overflow: hidden; font-family: monospace; font-size: 1.7rem; letter-spacing: .12em; white-space: nowrap; margin: 0; }
+.secondary-button { justify-self: start; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 5px; padding: 10px 14px; font-weight: 800; }
+.secondary-button:hover { background: var(--accent); color: #fff; }
 .cart-list { display: grid; gap: 12px; margin: 28px 0; }
 .cart-item { display: flex; gap: 18px; align-items: center; border-bottom: 1px solid var(--line); padding: 0 0 14px; }
 .cart-item img { width: 120px; height: 76px; object-fit: cover; }
@@ -125,6 +151,16 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
   .hero, .detail { grid-template-columns: 1fr; gap: 22px; padding-top: 45px; }
   h1 { font-size: 3.5rem; }
   .product-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; gap: 16px; }
   .section-heading { padding-top: 32px; }
   .footer-inner { flex-direction: column; }
+}
+
+@media print {
+  @page { size: A4; margin: 12mm; }
+  html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; }
+  body * { visibility: hidden; }
+  #boleto, #boleto * { visibility: visible; }
+  #boleto { position: fixed; inset: 0; width: 100%; height: auto; max-height: 100%; border: 1px solid #111; color: #111; background: #fff; padding: 24px; page-break-inside: avoid; break-inside: avoid; }
+  #print-boleto { display: none; }
 }
