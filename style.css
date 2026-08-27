@@ -116,7 +116,7 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .detail-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
 .gallery-thumb { min-width: 0; padding: 0; border: 2px solid transparent; background: var(--surface-muted); cursor: pointer; }
 .gallery-thumb.active, .gallery-thumb:hover { border-color: var(--accent); }
-.gallery-thumb img { display: block; width: 100%; aspect-ratio: 460 / 215; object-fit: cover; }
+.gallery-thumb img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .detail h1 { font-size: clamp(2.4rem, 5vw, 4.8rem); margin-top: 14px; }
 .detail-description { color: var(--muted); font-size: 1.08rem; line-height: 1.7; max-width: 620px; }
 .detail-price { font-size: 2rem; font-weight: 900; margin: 28px 0 18px; }

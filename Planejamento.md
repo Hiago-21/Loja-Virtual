@@ -21,13 +21,13 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 ### Implementei parcialmente
 
 - [~] A página `como-fiz.html` está criada, mas ainda falta inserir o vídeo da apresentação.
-- [~] O projeto funciona localmente, mas ainda precisa ser testado em uma URL pública.
+- [x] Publiquei o projeto no GitHub Pages e confirmei que a loja funciona em uma URL pública.
 
 ### Ainda preciso implementar
 
-- [ ] Escolher a hospedagem gratuita e publicar o projeto.
-- [ ] Testar a loja publicada em aba anônima e no celular.
-- [ ] Conferir se o `fetch` de `products.json` funciona corretamente depois do deploy.
+- [x] Escolher a hospedagem gratuita e publicar o projeto no GitHub Pages.
+- [x] Testar a loja publicada e confirmar o funcionamento do `fetch` de `products.json`.
+- [~] Ainda falta validar todos os fluxos em aba anônima e no celular.
 
 ## 2. Catálogo e headless commerce
 
@@ -156,7 +156,7 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ### Ainda preciso implementar ou concluir
 
-- [ ] Publicar uma única URL pública com a loja funcionando.
+- [x] Publicar uma única URL pública com a loja funcionando no GitHub Pages.
 - [ ] Inserir o vídeo não listado do YouTube ou Loom em `como-fiz.html`.
 - [ ] Gravar um vídeo de 5 a 8 minutos com minha voz e a navegação ao vivo.
 - [ ] Mostrar no vídeo a organização dos arquivos e as decisões do projeto.
@@ -178,10 +178,10 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ## Próxima sequência de trabalho
 
-1. [ ] Inserir o vídeo na página `como-fiz.html`.
-2. [ ] Publicar a loja em GitHub Pages, Netlify, Cloudflare Pages ou Vercel.
-3. [ ] Testar o `fetch`, os filtros, a galeria e o checkout na URL pública.
-4. [ ] Rodar o Lighthouse e anotar os scores e as melhorias prioritárias.
-5. [ ] Preparar o roteiro das cinco perguntas do desafio.
-6. [ ] Gravar e revisar o vídeo de 5 a 8 minutos.
+1. [ ] Rodar o Lighthouse na URL pública e registrar os scores.
+2. [ ] Corrigir os problemas prioritários de acessibilidade, carregamento e responsividade.
+3. [ ] Validar no celular e em aba anônima os filtros, a galeria, o carrinho e o checkout.
+4. [ ] Implementar o bloqueio do checkout com carrinho vazio.
+5. [ ] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
+6. [ ] Conferir se todas as imagens externas carregam e definir um fallback para imagens quebradas.
 7. [ ] Fazer a entrega com a URL pública e o repositório.

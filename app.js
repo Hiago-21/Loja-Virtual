@@ -69,7 +69,7 @@ function renderProducts(list, resetCount = false) {
     : `${visibleProducts.length} de ${list.length} jogos`;
   grid.innerHTML = visibleProducts.map((product) => `
     <article class="product-card">
-      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}"></a>
+      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async"></a>
       <div class="card-body">
         <div class="card-meta"><span>${getCategories(product).join(" / ")}</span><span>${product.anoLancamento}</span></div>
         <h3><a href="produto.html?id=${product.id}">${product.nome}</a></h3>
@@ -145,9 +145,9 @@ function renderProductDetail() {
   const gallery = [product.capa, ...(product.galeria || [])];
   detail.innerHTML = `
     <div class="detail-media">
-      <img class="detail-image" id="detail-main-image" src="${product.capa}" alt="Capa de ${product.nome}">
+      <img class="detail-image" id="detail-main-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" decoding="async">
       <div class="detail-gallery" aria-label="Galeria de imagens de ${product.nome}">
-        ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt=""></button>`).join("")}
+        ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt="" width="1920" height="1080" loading="lazy" decoding="async"></button>`).join("")}
       </div>
     </div>
     <div class="detail-info"><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div><button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button><div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
@@ -169,7 +169,7 @@ function renderCart() {
   const total = cartProducts.reduce((sum, product) => sum + product.preco, 0);
   document.querySelector("#cart-total").textContent = formatPrice(total);
   document.querySelector("#checkout-link").style.display = cartProducts.length ? "inline-flex" : "none";
-  list.innerHTML = cartProducts.length ? cartProducts.map((product) => `<div class="cart-item"><img src="${product.capa}" alt="Capa de ${product.nome}"><div class="cart-item-main"><h3>${product.nome}</h3><p>${getCategories(product).join(" / ")} · ${formatPrice(product.preco)}</p></div><button class="remove-button" data-remove="${product.id}" type="button">Remover</button></div>`).join("") : '<div class="empty-state"><h3>Seu carrinho está vazio</h3><p>Escolha uma aventura na loja.</p></div>';
+  list.innerHTML = cartProducts.length ? cartProducts.map((product) => `<div class="cart-item"><img src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async"><div class="cart-item-main"><h3>${product.nome}</h3><p>${getCategories(product).join(" / ")} · ${formatPrice(product.preco)}</p></div><button class="remove-button" data-remove="${product.id}" type="button">Remover</button></div>`).join("") : '<div class="empty-state"><h3>Seu carrinho está vazio</h3><p>Escolha uma aventura na loja.</p></div>';
   list.querySelectorAll("[data-remove]").forEach((button) => button.addEventListener("click", () => {
     saveCartIds(getCartIds().filter((id) => id !== Number(button.dataset.remove)));
     renderCart();
