@@ -161,7 +161,8 @@ function setupCheckout() {
   const paymentSelect = form.querySelector("[name=pagamento]");
   const details = document.querySelector("#payment-details");
   let pixTimer;
-  const getTotal = () => products.filter((product) => getCartIds().includes(product.id)).reduce((total, product) => total + product.preco, 0);
+  const getCartProducts = () => products.filter((product) => getCartIds().includes(product.id));
+  const getTotal = () => getCartProducts().reduce((total, product) => total + product.preco, 0);
   const formatTime = (seconds) => `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
   const getInterestRate = (count) => count === 1 ? 0 : Math.min(0.02 * (count - 1), 0.22);
   const formatCardNumber = (value) => value.replace(/\D/g, "").slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
@@ -234,7 +235,9 @@ function setupCheckout() {
         updateBoletoCustomer();
         return;
       }
-      details.innerHTML = `<div class="payment-panel boleto-panel" id="boleto"><h2>Boleto bancário</h2><div class="boleto-customer"><p><strong>Nome:</strong> <span id="boleto-name">${customerName}</span></p><p><strong>E-mail:</strong> <span id="boleto-email">${customerEmail}</span></p></div><p>Vencimento: ${new Date(Date.now() + 86400000).toLocaleDateString("pt-BR")}</p><p>Valor: <strong>${formatPrice(getTotal())}</strong></p><p class="barcode">|||| ||| |||| | ||| || ||||</p><p class="payment-code">34191.79001 01043.510047 91020.150008 1 98760000000000</p><button class="secondary-button" id="print-boleto" type="button">Imprimir boleto</button></div>`;
+      const cartProducts = getCartProducts();
+      const productRows = cartProducts.map((product) => `<div class="boleto-product"><span>${product.nome}</span><strong>${formatPrice(product.preco)}</strong></div>`).join("");
+      details.innerHTML = `<div class="payment-panel boleto-panel" id="boleto"><h2>Boleto bancário</h2><div class="boleto-customer"><p><strong>Nome:</strong> <span id="boleto-name">${customerName}</span></p><p><strong>E-mail:</strong> <span id="boleto-email">${customerEmail}</span></p></div><div class="boleto-products"><strong class="boleto-products-title">Jogos selecionados</strong>${productRows}</div><div class="boleto-summary"><p>Vencimento: <strong>${new Date(Date.now() + 86400000).toLocaleDateString("pt-BR")}</strong></p><p>Valor total: <strong>${formatPrice(getTotal())}</strong></p></div><p class="barcode">|||| ||| |||| | ||| || ||||</p><p class="payment-code">34191.79001 01043.510047 91020.150008 1 98760000000000</p><button class="secondary-button" id="print-boleto" type="button">Imprimir boleto</button></div>`;
       details.querySelector("#print-boleto").addEventListener("click", () => window.print());
     }
   };
