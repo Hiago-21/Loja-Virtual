@@ -2,6 +2,7 @@ const CART_KEY = "steamgrid-cart";
 const THEME_KEY = "steamgrid-theme";
 let products = [];
 let selectedGenre = "Todos";
+let visibleProductCount = 9;
 
 function getCategories(product) {
   return Array.isArray(product.genero) ? product.genero : [product.genero];
@@ -48,16 +49,25 @@ function setupTheme() {
 }
 
 // Cards são injetados dinamicamente para demonstrar o fluxo de uma vitrine headless.
-function renderProducts(list) {
+function renderProducts(list, resetCount = false) {
   const grid = document.querySelector("#product-grid");
   const count = document.querySelector("#result-count");
+  const loadMore = document.querySelector("#load-more");
+  const listEndMessage = document.querySelector("#list-end-message");
   if (!grid) return;
-  count.textContent = `${list.length} ${list.length === 1 ? "jogo encontrado" : "jogos encontrados"}`;
+  if (resetCount) visibleProductCount = 9;
   if (!list.length) {
+    count.textContent = "0 jogos encontrados";
     grid.innerHTML = '<div class="empty-state"><h3>Nenhum jogo encontrado</h3><p>Tente outro termo ou gênero.</p></div>';
+    if (loadMore) loadMore.hidden = true;
+    if (listEndMessage) listEndMessage.hidden = true;
     return;
   }
-  grid.innerHTML = list.map((product) => `
+  const visibleProducts = list.slice(0, visibleProductCount);
+  count.textContent = visibleProducts.length === list.length
+    ? `${list.length} ${list.length === 1 ? "jogo encontrado" : "jogos encontrados"}`
+    : `${visibleProducts.length} de ${list.length} jogos`;
+  grid.innerHTML = visibleProducts.map((product) => `
     <article class="product-card">
       <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}"></a>
       <div class="card-body">
@@ -67,9 +77,20 @@ function renderProducts(list) {
         <div class="card-footer"><span class="price">${formatPrice(product.preco)}</span><a class="cta" href="produto.html?id=${product.id}">Ver jogo</a></div>
       </div>
     </article>`).join("");
+  if (loadMore) loadMore.hidden = visibleProducts.length >= list.length;
+  if (listEndMessage) listEndMessage.hidden = visibleProducts.length < list.length;
 }
 
-function applyFilters() {
+function setupLoadMore() {
+  const loadMore = document.querySelector("#load-more");
+  if (!loadMore) return;
+  loadMore.addEventListener("click", () => {
+    visibleProductCount += 9;
+    applyFilters(false);
+  });
+}
+
+function applyFilters(resetCount = true) {
   const searchTerm = (document.querySelector("#search-input")?.value || "").toLowerCase();
   const filtered = products.filter((product) => {
     const categories = getCategories(product);
@@ -77,7 +98,7 @@ function applyFilters() {
     const matchesSearch = `${product.nome} ${categories.join(" ")} ${product.descricao}`.toLowerCase().includes(searchTerm);
     return matchesGenre && matchesSearch;
   });
-  renderProducts(filtered);
+  renderProducts(filtered, resetCount);
 }
 
 function setupFilters() {
@@ -259,7 +280,8 @@ async function loadProducts() {
     if (!response.ok) throw new Error("Falha ao carregar catálogo");
     products = await response.json();
     setupFilters();
-    renderProducts(products);
+    setupLoadMore();
+    renderProducts(products, true);
     renderProductDetail();
     renderCart();
     setupCheckout();
