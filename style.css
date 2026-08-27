@@ -76,7 +76,7 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding-bottom: 70px; }
 .product-card { overflow: hidden; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; }
 .product-card:hover { transform: translateY(-5px); box-shadow: 0 22px 50px rgba(101, 58, 28, .18); }
-.product-image { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
+.product-image { width: 100%; aspect-ratio: 460 / 215; object-fit: contain; background: var(--surface-muted); display: block; }
 .card-body { padding: 18px; }
 .card-meta { display: flex; justify-content: space-between; color: var(--muted); font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; }
 .card-body h3 { font-size: 1.3rem; margin: 12px 0 8px; }
@@ -90,7 +90,12 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .page-shell { padding-top: 55px; padding-bottom: 80px; min-height: calc(100vh - 160px); }
 .back-link { color: var(--accent); font-size: .9rem; font-weight: 800; }
 .detail { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; padding-top: 24px; }
-.detail-image { width: 100%; aspect-ratio: 1 / .72; object-fit: cover; box-shadow: var(--shadow); }
+.detail-media { min-width: 0; }
+.detail-image { width: 100%; aspect-ratio: 460 / 215; object-fit: contain; background: var(--surface-muted); box-shadow: var(--shadow); }
+.detail-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+.gallery-thumb { min-width: 0; padding: 0; border: 2px solid transparent; background: var(--surface-muted); cursor: pointer; }
+.gallery-thumb.active, .gallery-thumb:hover { border-color: var(--accent); }
+.gallery-thumb img { display: block; width: 100%; aspect-ratio: 460 / 215; object-fit: cover; }
 .detail h1 { font-size: clamp(2.4rem, 5vw, 4.8rem); margin-top: 14px; }
 .detail-description { color: var(--muted); font-size: 1.08rem; line-height: 1.7; max-width: 620px; }
 .detail-price { font-size: 2rem; font-weight: 900; margin: 28px 0 18px; }

@@ -24,5 +24,3 @@ checkout.html: Formulário de compra fictício.
 feedback.html: Mensagem de sucesso.
 
 como-fiz.html: Estrutura simples para eu embedar meu vídeo do YouTube depois.
-
-Por favor, adicione comentários explicativos no código JavaScript, pois precisarei gravar um vídeo explicando como o fetch e o LocalStorage funcionam."

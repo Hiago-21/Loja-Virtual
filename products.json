@@ -1,21 +1,728 @@
 [
   {
     "id": 1,
-    "nome": "Cyberpunk 2077",
-    "genero": "RPG",
-    "descricao": "Explore Night City, uma megalopolis obcecada por poder, glamour e modificacoes corporais, em uma aventura narrativa de mundo aberto.",
-    "anoLancamento": 2020,
+    "nome": "Celeste",
+    "genero": ["Plataforma", "Ação"],
+    "descricao": "Ajude Madeline a enfrentar seus demônios internos em sua jornada até o topo da Montanha Celeste, neste jogo de plataforma superafiado.",
+    "anoLancamento": 2018,
     "requisitos": {
-      "minimos": "Windows 10 64-bit, Intel Core i7-6700 ou Ryzen 5 1600, 12 GB RAM, GTX 1060 6 GB ou RX 580 8 GB, 70 GB SSD",
-      "recomendados": "Windows 10 64-bit, Intel Core i7-12700 ou Ryzen 7 7800X3D, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 70 GB SSD"
+      "minimos": "Windows 7 ou superior, Intel Core i3, 2 GB RAM, Intel HD Graphics 4000",
+      "recomendados": "Windows 10, Intel Core i5, 4 GB RAM, Nvidia GTX 650"
     },
-    "preco": 149.90,
-    "imagem": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85"
+    "preco": 59.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/library_hero.jpg"
+    ]
   },
   {
     "id": 2,
+    "nome": "Hollow Knight",
+    "genero": ["Metroidvania", "Ação"],
+    "descricao": "Forje seu próprio caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis.",
+    "anoLancamento": 2017,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core 2 Duo E5200, 4 GB RAM, GeForce 9800GTX (1GB)",
+      "recomendados": "Windows 10, Intel Core i5, 8 GB RAM, GeForce GTX 560"
+    },
+    "preco": 46.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Cuphead",
+    "genero": ["Plataforma", "Ação"],
+    "descricao": "Cuphead é um jogo de ação e tiros clássico, com enorme ênfase nas batalhas de chefes, inspirado nas animações infantis da década de 1930.",
+    "anoLancamento": 2017,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core2 Duo E8400, 3 GB RAM, Geforce 9600 GT",
+      "recomendados": "Windows 10, Intel Core i3, 4 GB RAM, Geforce GTX 460"
+    },
+    "preco": 36.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Dead Cells",
+    "genero": ["Roguelike", "Ação"],
+    "descricao": "Dead Cells é um jogo de ação em plataforma estilo rogue-lite e metroidvania. Explore um castelo em constante mutação e expansão.",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 7+, Intel Core i5+, 2 GB RAM, Nvidia 450 GTS / Radeon HD 5750",
+      "recomendados": "Windows 10, Intel Core i5+, 4 GB RAM, Nvidia GTX 460 / Radeon HD 7800"
+    },
+    "preco": 47.49,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Ori and the Will of the Wisps",
+    "genero": ["Metroidvania", "Aventura"],
+    "descricao": "Embarque em uma nova jornada em um mundo vasto e exótico, onde você encontrará inimigos imensos e quebra-cabeças desafiadores.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 10, AMD Athlon X4 / Intel Core i5 4460, 8 GB RAM, Nvidia GTX 950",
+      "recomendados": "Windows 10, AMD Ryzen 3 / Intel i5 Skylake, 8 GB RAM, Nvidia GTX 970"
+    },
+    "preco": 129.00,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Katana ZERO",
+    "genero": ["Ação", "Plataforma"],
+    "descricao": "Katana ZERO é um jogo de plataforma de ação neo-noir com combates intensos e morte instantânea. Desvende seu passado em acrobacias espetaculares.",
+    "anoLancamento": 2019,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core i3-3240, 4 GB RAM, GeForce 8800 GTS",
+      "recomendados": "Windows 10, Intel Core i5-3470, 8 GB RAM, GeForce GTX 560"
+    },
+    "preco": 46.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Shovel Knight: Treasure Trove",
+    "genero": ["Plataforma", "Ação"],
+    "descricao": "A edição completa de Shovel Knight, um jogo de ação e aventura clássico com jogabilidade incrível e personagens memoráveis.",
+    "anoLancamento": 2014,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core 2 Duo 2.1 GHz, 2 GB RAM, Gráficos integrados",
+      "recomendados": "Windows 10, Intel Core i3, 4 GB RAM, Gráficos dedicados básicos"
+    },
+    "preco": 73.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Blasphemous",
+    "genero": ["Metroidvania", "Ação"],
+    "descricao": "Blasphemous é um jogo de ação em plataforma brutal com combate punitivo que se passa no mundo de pesadelo de Cvstodia.",
+    "anoLancamento": 2019,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core2 Duo E8400, 4 GB RAM, GeForce GTX 260",
+      "recomendados": "Windows 10, Intel Core i5-750, 8 GB RAM, GeForce GTX 650"
+    },
+    "preco": 133.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Undertale",
+    "genero": ["RPG", "Aventura"],
+    "descricao": "Um jogo de RPG onde você não precisa destruir ninguém. Caia no mundo dos monstros e encontre a saída, ou fique preso para sempre.",
+    "anoLancamento": 2015,
+    "requisitos": {
+      "minimos": "Windows XP, Vista, 7, 8, 10, 2 GB RAM, 128 MB VRAM",
+      "recomendados": "Windows 7 ou superior, 4 GB RAM, 512 MB VRAM"
+    },
+    "preco": 19.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Stray",
+    "genero": ["Aventura", "Exploração"],
+    "descricao": "Perdido, sozinho e separado da sua família, um gato de rua deve desvendar um mistério ancestral para escapar de uma cidade cibernética esquecida.",
+    "anoLancamento": 2022,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Core i5-2300, 8 GB RAM, NVIDIA GeForce GTX 650 Ti",
+      "recomendados": "Windows 10, Intel Core i5-8400, 8 GB RAM, NVIDIA GeForce GTX 780"
+    },
+    "preco": 139.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Overcooked! 2",
+    "genero": ["Festa", "Cooperativo"],
+    "descricao": "Volte para o Reino da Cebola e monte sua equipe de chefs em um jogo cooperativo local ou online para até quatro jogadores. Salve o mundo da ameaça do Pão Zumbi!",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core i3-2100 / AMD A8-5600k, 4 GB RAM, GeForce GTX 630 / Radeon HD 6570",
+      "recomendados": "Windows 10, Intel Core i5-650 / AMD A10-5800K, 4 GB RAM, Nvidia GeForce GTX 650 / Radeon HD 7570"
+    },
+    "preco": 59.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Tricky Towers",
+    "genero": ["Festa", "Quebra-cabeça"],
+    "descricao": "Pegue seu manto de mago e construa torres incrivelmente instáveis usando magias neste jogo de quebra-cabeça multijogador baseado em física frenética.",
+    "anoLancamento": 2016,
+    "requisitos": {
+      "minimos": "Windows XP, Processador 1.73 GHz, 1 GB RAM, Placa de vídeo com 256 MB de VRAM",
+      "recomendados": "Windows 7 ou superior, Intel Core i3, 2 GB RAM, Placa de vídeo com 512 MB de VRAM"
+    },
+    "preco": 28.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "PICO PARK",
+    "genero": ["Cooperativo", "Quebra-cabeça"],
+    "descricao": "PICO PARK é um jogo cooperativo de quebra-cabeça e ação para 2 a 8 jogadores em rede local ou online. Trabalhar em equipe é a única forma de pegar a chave e passar de fase!",
+    "anoLancamento": 2021,
+    "requisitos": {
+      "minimos": "Windows 7, 8.1, 10 64-bit, Intel Core i3-3225, 4 GB RAM, Intel HD Graphics 4000",
+      "recomendados": "Windows 10 64-bit, Intel Core i5, 8 GB RAM, NVIDIA GTX 650"
+    },
+    "preco": 10.89,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "It Takes Two",
+    "genero": ["Aventura", "Plataforma", "Cooperativo"],
+    "descricao": "Embarque na jornada mais louca da sua vida em It Takes Two, uma aventura de plataforma que quebra gêneros criada puramente para o modo cooperativo.",
+    "anoLancamento": 2021,
+    "requisitos": {
+      "minimos": "Windows 8.1 64-bit, Intel Core i3-2100T / AMD FX 6100, 8 GB RAM, Nvidia GTX 660 / AMD R7 260x",
+      "recomendados": "Windows 10 64-bit, Intel Core i5 3570K / AMD Ryzen 3 1300x, 16 GB RAM, Nvidia GTX 980 / AMD R9 290X"
+    },
+    "preco": 199.00,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "Portal 2",
+    "genero": ["Quebra-cabeça", "Cooperativo"],
+    "descricao": "Portal 2 leva a fórmula premiada de jogabilidade e história a outro nível, introduzindo um modo cooperativo totalmente novo que exige que você pense com portais.",
+    "anoLancamento": 2011,
+    "requisitos": {
+      "minimos": "Windows 7 / Vista / XP, Processador 3.0 GHz P4 ou Dual Core, 2 GB RAM, Placa de vídeo de 128 MB com suporte a Pixel Shader 2.0",
+      "recomendados": "Windows 10, Processador Quad Core, 4 GB RAM, NVIDIA GeForce GTX 560"
+    },
+    "preco": 32.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "Lethal Company",
+    "genero": ["Terror", "Aventura"],
+    "descricao": "Você é um trabalhador contratado pela Companhia. Seu trabalho é coletar sucata de luas industrializadas e abandonadas para bater a cota, mas cuidado com o que espreita no escuro.",
+    "anoLancamento": 2023,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Core i5-7400 CPU, 4 GB RAM, NVIDIA GeForce GTX 1050",
+      "recomendados": "Windows 11, Intel Core i5-10400 CPU, 8 GB RAM, NVIDIA GeForce GTX 1060"
+    },
+    "preco": 32.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "Among Us",
+    "genero": ["Festa", "Cooperativo"],
+    "descricao": "Um jogo de festa sobre trabalho em equipe e traição para 4 a 15 jogadores online, ambientado em uma nave espacial. Encontre o Impostor!",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 10, Suporte a SSE2, 1 GB RAM, Placa de vídeo com 256MB VRAM",
+      "recomendados": "Windows 10, Intel Core i3, 4 GB RAM, Placa de vídeo dedicada"
+    },
+    "preco": 16.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "Phasmophobia",
+    "genero": ["Terror", "Cooperativo"],
+    "descricao": "Um jogo de terror psicológico cooperativo online para 4 jogadores. Junte evidências paranormais usando equipamentos de caça a fantasmas autênticos.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Intel Core i5-4590 / AMD Ryzen 5 1500X, 8 GB RAM, NVIDIA GTX 970 / AMD Radeon R9 290",
+      "recomendados": "Windows 10 64-bit, Intel Core i5-10600 / AMD Ryzen 5 3600, 8 GB RAM, NVIDIA RTX 2060 / AMD Radeon RX 5700"
+    },
+    "preco": 46.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "Keep Talking and Nobody Explodes",
+    "genero": ["Festa", "Cooperativo"],
+    "descricao": "Um jogador está preso com uma bomba-relógio. Os outros jogadores têm o manual de desarmamento. Conversem rápido, pois o tempo está acabando!",
+    "anoLancamento": 2015,
+    "requisitos": {
+      "minimos": "Windows 7, 1.5 GHz, 2 GB RAM, Gráficos de 256MB VRAM",
+      "recomendados": "Windows 10, Intel Core i3, 4 GB RAM, Gráficos dedicados"
+    },
+    "preco": 46.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "Gang Beasts",
+    "genero": ["Festa", "Cooperativo"],
+    "descricao": "Gang Beasts é um jogo multijogador de festa com personagens gelatinosos mal-humorados, sequências de combates corpo a corpo bizarros e ambientes perigosos.",
+    "anoLancamento": 2017,
+    "requisitos": {
+      "minimos": "Windows 7, 2nd generation Core i3, 4 GB RAM, NVIDIA GeForce 450",
+      "recomendados": "Windows 10, Core i5, 8 GB RAM, Nvidia GTX 970"
+    },
+    "preco": 36.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "nome": "Cult of the Lamb",
+    "genero": ["Ação", "Simulação", "Gerenciamento"],
+    "descricao": "Comece seu próprio culto em uma terra de falsos profetas, aventurando-se em regiões diversas e misteriosas para construir uma comunidade leal de adoradores da floresta.",
+    "anoLancamento": 2022,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core i3-3240, 4 GB RAM, GeForce GTX 560 Ti",
+      "recomendados": "Windows 10, Intel Core i5-3470, 8 GB RAM, GeForce GTX 1050"
+    },
+    "preco": 64.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "nome": "Bloons TD 6",
+    "genero": ["Estratégia", "Tower Defense"],
+    "descricao": "Junte-se a milhões de outros jogadores e desfrute de horas intermináveis do melhor jogo de defesa de torres disponível. Construa sua defesa perfeita a partir de uma combinação incrível de Torres de Macaco.",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 10, Processador 1.5Ghz ou superior, 4 GB RAM, Compatível com OpenGL 2.0",
+      "recomendados": "Windows 10, Processador 2Ghz ou superior, 8 GB RAM, Compatível com OpenGL 2.0"
+    },
+    "preco": 27.89,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "nome": "Stardew Valley",
+    "genero": ["RPG", "Simulação", "Cozy"],
+    "descricao": "Você herdou a antiga fazenda de seu avô no Vale do Orvalho. Armado com ferramentas de segunda mão e algumas moedas, você parte para começar sua nova vida.",
+    "anoLancamento": 2016,
+    "requisitos": {
+      "minimos": "Windows Vista ou superior, 2 Ghz, 2 GB RAM, 256 MB de memória de vídeo",
+      "recomendados": "Windows 10, 2 Ghz, 4 GB RAM, 512 MB de memória de vídeo"
+    },
+    "preco": 24.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "nome": "Dave the Diver",
+    "genero": ["Aventura", "RPG", "Gerenciamento"],
+    "descricao": "Mergulhe no Poço Azul durante o dia e administre um restaurante de sushi à noite neste RPG de aventura casual para um jogador.",
+    "anoLancamento": 2023,
+    "requisitos": {
+      "minimos": "Windows 10 64bit, Intel Core i3 Dual Core, 8 GB RAM, NVIDIA Geforce GTS 450",
+      "recomendados": "Windows 10 64bit, Intel Core i5 Quad Core, 16 GB RAM, NVIDIA Geforce GTX 750 Ti"
+    },
+    "preco": 59.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "nome": "Balatro",
+    "genero": ["Construção de Baralho", "Estratégia"],
+    "descricao": "Balatro é um construtor de baralhos roguelike hipnoticamente satisfatório onde você joga mãos de pôquer ilegais, descobre curingas que mudam o jogo e aciona combos ultrajantes.",
+    "anoLancamento": 2024,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Core i3, 4 GB RAM, OpenGL 2.1",
+      "recomendados": "Windows 11, Intel Core i5, 8 GB RAM, OpenGL 2.1"
+    },
+    "preco": 44.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "nome": "Slay the Spire",
+    "genero": ["Construção de Baralho", "Roguelike"],
+    "descricao": "Fundimos jogos de cartas e roguelikes para criar o melhor construtor de baralhos para um jogador. Crie um baralho único, encontre criaturas bizarras e descubra relíquias de poder imenso.",
+    "anoLancamento": 2019,
+    "requisitos": {
+      "minimos": "Windows 7, 2.0 GHz, 2 GB RAM, 1Gb Video Memory",
+      "recomendados": "Windows 10, 2.0 GHz, 4 GB RAM, 1Gb Video Memory"
+    },
+    "preco": 46.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "nome": "Factorio",
+    "genero": ["Construção de Base", "Automação", "Simulação"],
+    "descricao": "Factorio é um jogo em que você constrói e mantém fábricas. Você estará minerando recursos, pesquisando tecnologias, construindo infraestrutura e automatizando a produção.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Dual core 3Ghz+, 4 GB RAM, 512MB Video Memory",
+      "recomendados": "Windows 11 64-bit, Quad core 3Ghz+, 8 GB RAM, 2GB Video Memory"
+    },
+    "preco": 100.00,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "nome": "RimWorld",
+    "genero": ["Simulação", "Estratégia", "Construção de Base"],
+    "descricao": "Um simulador de colônias de ficção científica dirigido por uma inteligência artificial contadora de histórias. Gera histórias simulando psicologia, ecologia, tiroteios, combates corpo a corpo e muito mais.",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 7, Core 2 Duo, 4 GB RAM, Intel HD Graphics 4000",
+      "recomendados": "Windows 10, Core i5, 8 GB RAM, NVIDIA GeForce GTX 1050"
+    },
+    "preco": 104.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "nome": "Cities: Skylines",
+    "genero": ["Simulação", "Construção de Cidade", "Estratégia"],
+    "descricao": "Cities: Skylines é uma versão moderna da simulação clássica de cidades. O jogo introduz novos elementos de jogabilidade para perceber a emoção e as dificuldades de criar e manter uma cidade de verdade.",
+    "anoLancamento": 2015,
+    "requisitos": {
+      "minimos": "Windows 10 64 Bit, Intel Core I7 930, 8 GB RAM, Nvidia GeForce GTX 260",
+      "recomendados": "Windows 10 64 Bit, Intel Core I7 2700K, 16 GB RAM, Nvidia GeForce GTX 580"
+    },
+    "preco": 88.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "nome": "Dorfromantik",
+    "genero": ["Quebra-cabeça", "Cozy", "Construção"],
+    "descricao": "Dorfromantik é um jogo de construção e quebra-cabeça relaxante onde você cria belas paisagens de vilas em constante crescimento, posicionando peças hexagonais de forma estratégica.",
+    "anoLancamento": 2022,
+    "requisitos": {
+      "minimos": "Windows 7, 2 GHz Dual Core, 3 GB RAM, Nvidia GT 440",
+      "recomendados": "Windows 10, 2.5 GHz Quad Core, 4 GB RAM, Nvidia GTX 660"
+    },
+    "preco": 32.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 31,
+    "nome": "Core Keeper",
+    "genero": ["Aventura", "Sobrevivência", "Crafting"],
+    "descricao": "Explore uma vasta caverna subterrânea cheia de criaturas, relíquias e recursos em uma aventura sandbox de mineração para 1 a 8 jogadores. Minere, construa, lute e cultive para desvendar os mistérios de um núcleo antigo.",
+    "anoLancamento": 2024,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Intel Core i5-8400 / AMD Ryzen 5 2600, 8 GB RAM, Nvidia GTX 970",
+      "recomendados": "Windows 10 64-bit, Intel Core i5-10400 / AMD Ryzen 5 3600, 16 GB RAM, Nvidia RTX 2060"
+    },
+    "preco": 59.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 32,
+    "nome": "Terraria",
+    "genero": ["Aventura", "Sandbox", "Sobrevivência"],
+    "descricao": "Cavue, lute, explore, construa! Nada é impossível neste jogo de aventura cheio de ação. O mundo é a sua tela e o chão é a sua tinta.",
+    "anoLancamento": 2011,
+    "requisitos": {
+      "minimos": "Windows XP, 2.0 GHz, 2.5 GB RAM, 128MB Video Memory",
+      "recomendados": "Windows 7/8/10, 3.0 GHz, 4 GB RAM, 256MB Video Memory"
+    },
+    "preco": 32.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 33,
+    "nome": "Don't Starve Together",
+    "genero": ["Sobrevivência", "Aventura", "Crafting"],
+    "descricao": "Don't Starve Together é a expansão multijogador autônoma do implacável jogo de sobrevivência na natureza, Don't Starve.",
+    "anoLancamento": 2016,
+    "requisitos": {
+      "minimos": "Windows 7, 1.7 GHz+, 1 GB RAM, Radeon HD 5450 ou superior",
+      "recomendados": "Windows 10, 2.0 GHz+, 2 GB RAM, Nvidia GeForce 510+"
+    },
+    "preco": 38.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 34,
+    "nome": "Subnautica",
+    "genero": ["Sobrevivência", "Exploração", "Aventura"],
+    "descricao": "Mergulhe nas profundezas de um mundo alienígena subaquático cheio de maravilhas e perigos. Crie equipamentos, pilote submarinos e supere a vida selvagem para explorar recifes e cavernas.",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows Vista SP2, Intel Haswell 2 cores / 4 threads @ 2.5Ghz, 4 GB RAM, Intel HD 4600",
+      "recomendados": "Windows 10, Intel Haswell 4 cores / 4 threads @ 3.2Ghz, 8 GB RAM, Nvidia GTX 970"
+    },
+    "preco": 59.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 35,
+    "nome": "Valheim",
+    "genero": ["Sobrevivência", "Exploração", "Aventura"],
+    "descricao": "Um jogo brutal de exploração e sobrevivência para 1 a 10 jogadores, ambientado em um purgatório gerado procedimentalmente e inspirado na cultura viking.",
+    "anoLancamento": 2021,
+    "requisitos": {
+      "minimos": "Windows 7 ou posterior, 2.6 GHz Dual Core, 8 GB RAM, GeForce GTX 950",
+      "recomendados": "Windows 10, i5 3GHz+ ou Ryzen 5 3GHz+, 16 GB RAM, GeForce GTX 1060"
+    },
+    "preco": 37.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 36,
+    "nome": "Rust",
+    "genero": ["Ação", "Sobrevivência", "Multijogador"],
+    "descricao": "O único objetivo em Rust é sobreviver. Supere a fome, a sede e o frio. Construa fogueiras, abrigos e proteja-se contra outros jogadores e animais perigosos.",
+    "anoLancamento": 2018,
+    "requisitos": {
+      "minimos": "Windows 10 64bit, Intel Core i7-3770 / AMD FX-9590, 10 GB RAM, GTX 670",
+      "recomendados": "Windows 10 64bit, Intel Core i7-4690K / AMD Ryzen 5 1600, 16 GB RAM, GTX 980"
+    },
+    "preco": 107.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 37,
+    "nome": "Palworld",
+    "genero": ["Ação", "Aventura", "Sobrevivência"],
+    "descricao": "Lute, cultive, construa e trabalhe ao lado de criaturas misteriosas chamadas 'Pals' neste inovador jogo de sobrevivência e criação em mundo aberto multijogador.",
+    "anoLancamento": 2024,
+    "requisitos": {
+      "minimos": "Windows 10 ou posterior, i5-3570K 3.4 GHz 4 Core, 16 GB RAM, GeForce GTX 1050",
+      "recomendados": "Windows 10 ou posterior, i9-9900K 3.6 GHz 8 Core, 32 GB RAM, GeForce RTX 2070"
+    },
+    "preco": 73.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 38,
+    "nome": "Deep Rock Galactic",
+    "genero": ["Ação", "FPS", "Cooperativo"],
+    "descricao": "Deep Rock Galactic é um jogo de tiro em primeira pessoa cooperativo para 1 a 4 jogadores com anões espaciais, ambientes 100% destrutíveis e hordas de monstros alienígenas.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 7 64-bit, 2.4 GHz Dual Core, 6 GB RAM, NVIDIA GeForce GTX 460",
+      "recomendados": "Windows 10 64-bit, 2.4 GHz Quad Core, 8 GB RAM, NVIDIA GeForce GTX 970"
+    },
+    "preco": 73.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 39,
+    "nome": "No Man's Sky",
+    "genero": ["Aventura", "Exploração", "Sobrevivência"],
+    "descricao": "No Man's Sky é um jogo focado em exploração e sobrevivência em um universo infinito gerado procedimentalmente, cheio de sistemas solares, planetas e formas de vida únicas.",
+    "anoLancamento": 2016,
+    "requisitos": {
+      "minimos": "Windows 10/11 64-bit, Intel Core i3, 8 GB RAM, NVIDIA GTX 1060",
+      "recomendados": "Windows 10/11 64-bit, Intel Core i5, 16 GB RAM, NVIDIA RTX 2060"
+    },
+    "preco": 162.00,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 40,
+    "nome": "Sea of Thieves",
+    "genero": ["Aventura", "Multijogador", "Mundo Aberto"],
+    "descricao": "Sea of Thieves oferece a experiência pirata definitiva, desde a navegação e combate até a exploração e saque. Viva a vida dos seus sonhos em alto-mar.",
+    "anoLancamento": 2020,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Iris Plus Graphics 640 / Nvidia GeForce GTX 650, 4 GB RAM",
+      "recomendados": "Windows 10, Nvidia GeForce GTX 770 / AMD Radeon R9 380X, 8 GB RAM"
+    },
+    "preco": 149.00,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 41,
     "nome": "Elden Ring",
-    "genero": "Acao",
+    "genero": ["Ação", "RPG"],
     "descricao": "Desbrave as Terras Intermedias em uma fantasia sombria criada em parceria por Hidetaka Miyazaki e George R. R. Martin.",
     "anoLancamento": 2022,
     "requisitos": {
@@ -23,25 +730,35 @@
       "recomendados": "Windows 11, Intel Core i7-8700K ou Ryzen 5 3600X, 16 GB RAM, GTX 1070 8 GB ou Vega 56 8 GB, 60 GB"
     },
     "preco": 229.90,
-    "imagem": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85"
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/library_hero.jpg"
+    ]
   },
   {
-    "id": 3,
-    "nome": "Stardew Valley",
-    "genero": "Indie",
-    "descricao": "Troque o ritmo da cidade pela vida no campo. Cultive, pesque, construa sua casa e forme uma comunidade do seu jeito.",
-    "anoLancamento": 2016,
+    "id": 42,
+    "nome": "Cyberpunk 2077",
+    "genero": ["RPG", "Ação"],
+    "descricao": "Explore Night City, uma megalopolis obcecada por poder, glamour e modificacoes corporais, em uma aventura narrativa de mundo aberto.",
+    "anoLancamento": 2020,
     "requisitos": {
-      "minimos": "Windows 10, processador de 2 GHz, 2 GB RAM, 256 MB de memoria de video, 500 MB de armazenamento",
-      "recomendados": "Windows 10, processador de 2.5 GHz, 4 GB RAM, 512 MB de memoria de video, 1 GB de armazenamento"
+      "minimos": "Windows 10 64-bit, Intel Core i7-6700 ou Ryzen 5 1600, 12 GB RAM, GTX 1060 6 GB ou RX 580 8 GB, 70 GB SSD",
+      "recomendados": "Windows 10 64-bit, Intel Core i7-12700 ou Ryzen 7 7800X3D, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 70 GB SSD"
     },
-    "preco": 39.90,
-    "imagem": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1200&q=85"
+    "preco": 199.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_hero.jpg"
+    ]
   },
   {
-    "id": 4,
+    "id": 43,
     "nome": "Baldur's Gate 3",
-    "genero": "RPG",
+    "genero": ["RPG", "Estratégia"],
     "descricao": "Reuna seu grupo e escreva uma historia de amizade, traicao e aventura em um RPG de fantasia baseado em D&D.",
     "anoLancamento": 2023,
     "requisitos": {
@@ -49,32 +766,137 @@
       "recomendados": "Windows 10 64-bit, Intel i7-8700K ou Ryzen 5 3600, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 150 GB SSD"
     },
     "preco": 199.90,
-    "imagem": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85"
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_hero.jpg"
+    ]
   },
   {
-    "id": 5,
+    "id": 44,
+    "nome": "The Witcher 3: Wild Hunt",
+    "genero": ["RPG", "Ação"],
+    "descricao": "Você é Geralt de Rivia, caçador de monstros em um mundo aberto devastado pela guerra e infestado de criaturas.",
+    "anoLancamento": 2015,
+    "requisitos": {
+      "minimos": "Windows 7/8/10 64-bit, Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940, 6 GB RAM, Nvidia GPU GeForce GTX 660",
+      "recomendados": "Windows 7/8/10 64-bit, Intel CPU Core i7 3700 3.4 GHz / AMD CPU AMD FX-8350 4 GHz, 8 GB RAM, Nvidia GPU GeForce GTX 770"
+    },
+    "preco": 129.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "nome": "Red Dead Redemption 2",
+    "genero": ["Ação", "Aventura"],
+    "descricao": "Vencedor de mais de 175 prêmios de Jogo do Ano, RDR2 é a épica história de Arthur Morgan e da gangue de Van der Linde.",
+    "anoLancamento": 2019,
+    "requisitos": {
+      "minimos": "Windows 7, Intel Core i5-2500K / AMD FX-6300, 8 GB RAM, Nvidia GeForce GTX 770 2GB",
+      "recomendados": "Windows 10, Intel Core i7-4770K / AMD Ryzen 5 1500X, 12 GB RAM, Nvidia GeForce GTX 1060 6GB"
+    },
+    "preco": 299.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 46,
     "nome": "Hades",
-    "genero": "Roguelike",
+    "genero": ["Roguelike", "Ação"],
     "descricao": "Lute para escapar do submundo em um roguelike eletrizante, onde cada tentativa revela uma nova parte da historia.",
     "anoLancamento": 2020,
     "requisitos": {
       "minimos": "Windows 7 SP1, Dual Core 2.4 GHz, 4 GB RAM, 1 GB de memoria de video, 15 GB de armazenamento",
       "recomendados": "Windows 10, Dual Core 3.0 GHz+, 8 GB RAM, 2 GB de memoria de video, 15 GB de armazenamento"
     },
-    "preco": 74.90,
-    "imagem": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1200&q=85"
+    "preco": 73.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_hero.jpg"
+    ]
   },
   {
-    "id": 6,
-    "nome": "Forza Horizon 5",
-    "genero": "Corrida",
-    "descricao": "Acelere por paisagens vibrantes do Mexico em um festival automotivo aberto, social e cheio de descobertas.",
-    "anoLancamento": 2021,
+    "id": 47,
+    "nome": "Hades II",
+    "genero": ["Roguelike", "Ação"],
+    "descricao": "Desafie o Titã do Tempo nesta sequência mágica do aclamado roguelike de ação, assumindo o papel da Princesa do Submundo.",
+    "anoLancamento": 2024,
     "requisitos": {
-      "minimos": "Windows 10, Intel i5-4460 ou Ryzen 3 1200, 8 GB RAM, GTX 970 ou RX 470, 110 GB",
-      "recomendados": "Windows 10, Intel i5-8400 ou Ryzen 5 1500X, 16 GB RAM, GTX 1070 ou RX 590, 110 GB"
+      "minimos": "Windows 10 64-bit, Dual Core 3.0 GHz, 8 GB RAM, 2 GB VRAM",
+      "recomendados": "Windows 10 64-bit, Quad Core 3.6 GHz, 16 GB RAM, 4 GB VRAM"
     },
-    "preco": 249.90,
-    "imagem": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=85"
+    "preco": 73.99,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 48,
+    "nome": "Sekiro: Shadows Die Twice",
+    "genero": ["Ação", "Aventura"],
+    "descricao": "Trace seu próprio caminho de vingança em uma aventura cheia de combate refinado criada pela FromSoftware.",
+    "anoLancamento": 2019,
+    "requisitos": {
+      "minimos": "Windows 7 64-bit, Intel Core i3-2100 / AMD FX-6300, 4 GB RAM, NVIDIA GeForce GTX 760",
+      "recomendados": "Windows 10 64-bit, Intel Core i5-2500K / AMD Ryzen 5 1400, 8 GB RAM, NVIDIA GeForce GTX 970"
+    },
+    "preco": 274.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 49,
+    "nome": "Helldivers 2",
+    "genero": ["Ação", "Tiro", "Cooperativo"],
+    "descricao": "A última linha de ofensa da galáxia. Junte-se e lute pela liberdade em uma galáxia hostil neste jogo de tiro cooperativo frenético.",
+    "anoLancamento": 2024,
+    "requisitos": {
+      "minimos": "Windows 10, Intel Core i7-4790K / AMD Ryzen 5 1500X, 8 GB RAM, NVIDIA GeForce GTX 1050 Ti",
+      "recomendados": "Windows 10, Intel Core i7-9700K / AMD Ryzen 7 3700X, 16 GB RAM, NVIDIA GeForce RTX 2060"
+    },
+    "preco": 199.50,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/library_hero.jpg"
+    ]
+  },
+  {
+    "id": 50,
+    "nome": "Grand Theft Auto V",
+    "genero": ["Ação", "Mundo Aberto"],
+    "descricao": "Explore o mundo aberto de Los Santos e Blaine County na experiência definitiva de Grand Theft Auto V.",
+    "anoLancamento": 2015,
+    "requisitos": {
+      "minimos": "Windows 10 64-bit, Intel Core 2 Quad CPU Q6600 @ 2.40GHz / AMD Phenom 9850 Quad-Core Processor @ 2.5GHz, 4 GB RAM, NVIDIA 9800 GT 1GB",
+      "recomendados": "Windows 10 64-bit, Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz, 8 GB RAM, NVIDIA GTX 660 2GB"
+    },
+    "preco": 83.90,
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg",
+    "galeria": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/page_bg_generated_v6b.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_hero.jpg"
+    ]
   }
 ]
