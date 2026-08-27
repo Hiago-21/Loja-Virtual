@@ -83,14 +83,31 @@ function applyFilters() {
 function setupFilters() {
   const container = document.querySelector("#genre-filters");
   if (!container) return;
+  const trigger = document.querySelector("#category-trigger");
+  const panel = document.querySelector("#category-panel");
+  const closeButton = document.querySelector("#category-close");
   const genres = ["Todos", ...new Set(products.flatMap(getCategories))];
   container.innerHTML = genres.map((genre) => `<button class="filter-button ${genre === "Todos" ? "active" : ""}" data-genre="${genre}" type="button">${genre}</button>`).join("");
+  const closePanel = () => {
+    panel.hidden = true;
+    trigger.setAttribute("aria-expanded", "false");
+  };
+  trigger.addEventListener("click", () => {
+    panel.hidden = !panel.hidden;
+    trigger.setAttribute("aria-expanded", String(!panel.hidden));
+  });
+  closeButton.addEventListener("click", closePanel);
   container.addEventListener("click", (event) => {
     const button = event.target.closest("[data-genre]");
     if (!button) return;
     selectedGenre = button.dataset.genre;
     container.querySelectorAll(".filter-button").forEach((item) => item.classList.toggle("active", item === button));
+    trigger.textContent = selectedGenre === "Todos" ? "Pesquisar por categorias" : `Categoria: ${selectedGenre}`;
     applyFilters();
+    closePanel();
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".category-picker")) closePanel();
   });
   document.querySelector("#search-input")?.addEventListener("input", applyFilters);
 }
@@ -112,7 +129,7 @@ function renderProductDetail() {
         ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt=""></button>`).join("")}
       </div>
     </div>
-    <div><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div><button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button><div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
+    <div class="detail-info"><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div><button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button><div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
   const mainImage = document.querySelector("#detail-main-image");
   document.querySelectorAll(".gallery-thumb").forEach((thumbnail) => thumbnail.addEventListener("click", () => {
     mainImage.src = thumbnail.dataset.image;

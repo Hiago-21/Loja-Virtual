@@ -31,7 +31,13 @@
     </section>
     <section class="toolbar" aria-label="Filtros de produtos">
       <div class="search"><input id="search-input" type="search" placeholder="Buscar por nome ou genero..." aria-label="Buscar jogos"></div>
-      <div class="filters" id="genre-filters"></div>
+      <div class="category-picker">
+        <button class="category-trigger" id="category-trigger" type="button" aria-expanded="false" aria-controls="category-panel">Pesquisar por categorias</button>
+        <div class="category-panel" id="category-panel" hidden>
+          <div class="category-panel-heading"><strong>Escolha uma categoria</strong><button class="category-close" id="category-close" type="button" aria-label="Fechar categorias">×</button></div>
+          <div class="category-options" id="genre-filters"></div>
+        </div>
+      </div>
     </section>
     <section>
       <div class="section-heading"><h2>Em destaque</h2><span id="result-count"></span></div>

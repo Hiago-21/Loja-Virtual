@@ -2,7 +2,10 @@
   {
     "id": 1,
     "nome": "Celeste",
-    "genero": ["Plataforma", "Ação"],
+    "genero": [
+      "Plataforma",
+      "Ação"
+    ],
     "descricao": "Ajude Madeline a enfrentar seus demônios internos em sua jornada até o topo da Montanha Celeste, neste jogo de plataforma superafiado.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -12,15 +15,18 @@
     "preco": 59.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_1ad297c2044cdcf450ee83e56350cafb590da755.1920x1080.jpg?t=1714089525",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_03bfe6bd5ddac7f747c8d2aa1a4f82cfd53c6dcb.1920x1080.jpg?t=1714089525",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_4b0f0222341b64a37114033aca9994551f27c161.1920x1080.jpg?t=1714089525"
     ]
   },
   {
     "id": 2,
     "nome": "Hollow Knight",
-    "genero": ["Metroidvania", "Ação"],
+    "genero": [
+      "Metroidvania",
+      "Ação"
+    ],
     "descricao": "Forje seu próprio caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis.",
     "anoLancamento": 2017,
     "requisitos": {
@@ -30,15 +36,18 @@
     "preco": 46.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.1920x1080.jpg?t=1776125684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.1920x1080.jpg?t=1776125684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.1920x1080.jpg?t=1776125684"
     ]
   },
   {
     "id": 3,
     "nome": "Cuphead",
-    "genero": ["Plataforma", "Ação"],
+    "genero": [
+      "Plataforma",
+      "Ação"
+    ],
     "descricao": "Cuphead é um jogo de ação e tiros clássico, com enorme ênfase nas batalhas de chefes, inspirado nas animações infantis da década de 1930.",
     "anoLancamento": 2017,
     "requisitos": {
@@ -48,15 +57,18 @@
     "preco": 36.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_e3096a5555cb77d88db165c83d5ef3a24af1354a.1920x1080.jpg?t=1709068852",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_615455299355eaf552c638c7ea5b24a8b46e02dd.1920x1080.jpg?t=1709068852",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.1920x1080.jpg?t=1709068852"
     ]
   },
   {
     "id": 4,
     "nome": "Dead Cells",
-    "genero": ["Roguelike", "Ação"],
+    "genero": [
+      "Roguelike",
+      "Ação"
+    ],
     "descricao": "Dead Cells é um jogo de ação em plataforma estilo rogue-lite e metroidvania. Explore um castelo em constante mutação e expansão.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -66,33 +78,39 @@
     "preco": 47.49,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/ss_ac28000ade40cc2fe5c128f32ac98ba33c008a7a.1920x1080.jpg?t=1779086887",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/ss_7bde51ea6c8f6289e85ea1d8c1c941e1f8bfee91.1920x1080.jpg?t=1779086887",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/ss_e87e72a247918d8493892e035d5e1b4b84470d2f.1920x1080.jpg?t=1779086887"
     ]
   },
   {
     "id": 5,
     "nome": "Ori and the Will of the Wisps",
-    "genero": ["Metroidvania", "Aventura"],
+    "genero": [
+      "Metroidvania",
+      "Aventura"
+    ],
     "descricao": "Embarque em uma nova jornada em um mundo vasto e exótico, onde você encontrará inimigos imensos e quebra-cabeças desafiadores.",
     "anoLancamento": 2020,
     "requisitos": {
       "minimos": "Windows 10, AMD Athlon X4 / Intel Core i5 4460, 8 GB RAM, Nvidia GTX 950",
       "recomendados": "Windows 10, AMD Ryzen 3 / Intel i5 Skylake, 8 GB RAM, Nvidia GTX 970"
     },
-    "preco": 129.00,
+    "preco": 129,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/ss_0cf0ec6681ae5771173790dbc99ddb3bf3b886ad.1920x1080.jpg?t=1759530749",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/ss_f8ac174b7949e89fe1939a7bd2c471785dee55f0.1920x1080.jpg?t=1759530749",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/ss_3ae04b208aaff3869f69617c47449ec1d7a06513.1920x1080.jpg?t=1759530749"
     ]
   },
   {
     "id": 6,
     "nome": "Katana ZERO",
-    "genero": ["Ação", "Plataforma"],
+    "genero": [
+      "Ação",
+      "Plataforma"
+    ],
     "descricao": "Katana ZERO é um jogo de plataforma de ação neo-noir com combates intensos e morte instantânea. Desvende seu passado em acrobacias espetaculares.",
     "anoLancamento": 2019,
     "requisitos": {
@@ -102,15 +120,18 @@
     "preco": 46.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/ss_c269a57182b021d2aac2bb8d42421d0ef301360d.1920x1080.jpg?t=1761066027",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/ss_d4f8ef350ac44c096f8137208c381cac31e68242.1920x1080.jpg?t=1761066027",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/ss_fce2aae6d24fbca70a8196e04f66c51d49a353b0.1920x1080.jpg?t=1761066027"
     ]
   },
   {
     "id": 7,
     "nome": "Shovel Knight: Treasure Trove",
-    "genero": ["Plataforma", "Ação"],
+    "genero": [
+      "Plataforma",
+      "Ação"
+    ],
     "descricao": "A edição completa de Shovel Knight, um jogo de ação e aventura clássico com jogabilidade incrível e personagens memoráveis.",
     "anoLancamento": 2014,
     "requisitos": {
@@ -120,33 +141,39 @@
     "preco": 73.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/ss_019205f5f9ae1c3f0d5359e967135a76ae1ebd2d.1920x1080.jpg?t=1780266579",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/ss_d4a97787fdb4f0c6bdc0826fcbb7319f74fffc6c.1920x1080.jpg?t=1780266579",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250760/ss_77b1cdeb564ee017030e7ff88f647db7ada26206.1920x1080.jpg?t=1780266579"
     ]
   },
   {
     "id": 8,
     "nome": "Blasphemous",
-    "genero": ["Metroidvania", "Ação"],
+    "genero": [
+      "Metroidvania",
+      "Ação"
+    ],
     "descricao": "Blasphemous é um jogo de ação em plataforma brutal com combate punitivo que se passa no mundo de pesadelo de Cvstodia.",
     "anoLancamento": 2019,
     "requisitos": {
       "minimos": "Windows 7, Intel Core2 Duo E8400, 4 GB RAM, GeForce GTX 260",
       "recomendados": "Windows 10, Intel Core i5-750, 8 GB RAM, GeForce GTX 650"
     },
-    "preco": 133.90,
+    "preco": 133.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/ss_770720a3db9408ae7ae6625ba157bfb9195a3a68.1920x1080.jpg?t=1780479368",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/ss_b74f57919e88283fac75389e76ead2fed73997e5.1920x1080.jpg?t=1780479368",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774361/ss_bd57bcb1e9183cbea61339727a97bcc5206677b2.1920x1080.jpg?t=1780479368"
     ]
   },
   {
     "id": 9,
     "nome": "Undertale",
-    "genero": ["RPG", "Aventura"],
+    "genero": [
+      "RPG",
+      "Aventura"
+    ],
     "descricao": "Um jogo de RPG onde você não precisa destruir ninguém. Caia no mundo dos monstros e encontre a saída, ou fique preso para sempre.",
     "anoLancamento": 2015,
     "requisitos": {
@@ -156,51 +183,60 @@
     "preco": 19.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/ss_6ded97a2c98473ac1e8a2b3c1419d93fb31b1186.1920x1080.jpg?t=1757349115",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/ss_b9018c41cea2bdfb150609bedfca99b16a5af02a.1920x1080.jpg?t=1757349115",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/ss_b9ec4c53a8ed37f764649c970757c0a1f4948ec1.1920x1080.jpg?t=1757349115"
     ]
   },
   {
     "id": 10,
     "nome": "Stray",
-    "genero": ["Aventura", "Exploração"],
+    "genero": [
+      "Aventura",
+      "Exploração"
+    ],
     "descricao": "Perdido, sozinho e separado da sua família, um gato de rua deve desvendar um mistério ancestral para escapar de uma cidade cibernética esquecida.",
     "anoLancamento": 2022,
     "requisitos": {
       "minimos": "Windows 10, Intel Core i5-2300, 8 GB RAM, NVIDIA GeForce GTX 650 Ti",
       "recomendados": "Windows 10, Intel Core i5-8400, 8 GB RAM, NVIDIA GeForce GTX 780"
     },
-    "preco": 139.90,
+    "preco": 139.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/ss_88e209a90c2039fa76bca6fa08c641365be38d50.1920x1080.jpg?t=1785424330",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/ss_e8f0cbd5efdba352e89c4cfcee3fe991a1e1be8a.1920x1080.jpg?t=1785424330",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/ss_2221af260c64362fdc835a9dca65f6f1d1192b25.1920x1080.jpg?t=1785424330"
     ]
   },
   {
     "id": 11,
     "nome": "Overcooked! 2",
-    "genero": ["Festa", "Cooperativo"],
+    "genero": [
+      "Festa",
+      "Cooperativo"
+    ],
     "descricao": "Volte para o Reino da Cebola e monte sua equipe de chefs em um jogo cooperativo local ou online para até quatro jogadores. Salve o mundo da ameaça do Pão Zumbi!",
     "anoLancamento": 2018,
     "requisitos": {
       "minimos": "Windows 7, Intel Core i3-2100 / AMD A8-5600k, 4 GB RAM, GeForce GTX 630 / Radeon HD 6570",
       "recomendados": "Windows 10, Intel Core i5-650 / AMD A10-5800K, 4 GB RAM, Nvidia GeForce GTX 650 / Radeon HD 7570"
     },
-    "preco": 59.90,
+    "preco": 59.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/ss_2f84a12e1fe82cca37848bf29d4b8b16e83db03b.1920x1080.jpg?t=1784805486",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/ss_7f290dccbdc3c0eb9ded951717bceba5d7455764.1920x1080.jpg?t=1784805486",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/ss_652d62549a8a5fdf4f0061e20b16a3cd9a19dc45.1920x1080.jpg?t=1784805486"
     ]
   },
   {
     "id": 12,
     "nome": "Tricky Towers",
-    "genero": ["Festa", "Quebra-cabeça"],
+    "genero": [
+      "Festa",
+      "Quebra-cabeça"
+    ],
     "descricao": "Pegue seu manto de mago e construa torres incrivelmente instáveis usando magias neste jogo de quebra-cabeça multijogador baseado em física frenética.",
     "anoLancamento": 2016,
     "requisitos": {
@@ -208,17 +244,20 @@
       "recomendados": "Windows 7 ou superior, Intel Core i3, 2 GB RAM, Placa de vídeo com 512 MB de VRAM"
     },
     "preco": 28.99,
-    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/header.jpg",
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437920/b36fdd1a692a6602a7ba77dae4ab5c04ec11e4f4/header.jpg?t=1764332173",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437920/ss_c6b902a57834cf3d86ac3298671590e4d6800ead.1920x1080.jpg?t=1764332173",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437920/ss_4639cd76c0675f8400eda2b72954cc8a99fd7978.1920x1080.jpg?t=1764332173",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437920/ss_07caed261e7cf891c48e817e01b1dac1bc441331.1920x1080.jpg?t=1764332173"
     ]
   },
   {
     "id": 13,
     "nome": "PICO PARK",
-    "genero": ["Cooperativo", "Quebra-cabeça"],
+    "genero": [
+      "Cooperativo",
+      "Quebra-cabeça"
+    ],
     "descricao": "PICO PARK é um jogo cooperativo de quebra-cabeça e ação para 2 a 8 jogadores em rede local ou online. Trabalhar em equipe é a única forma de pegar a chave e passar de fase!",
     "anoLancamento": 2021,
     "requisitos": {
@@ -226,35 +265,42 @@
       "recomendados": "Windows 10 64-bit, Intel Core i5, 8 GB RAM, NVIDIA GTX 650"
     },
     "preco": 10.89,
-    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/header.jpg",
+    "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/header.jpg?t=1740033204",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533590/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/ss_d54c6fd82d8c804939d136356eda364295a788cd.1920x1080.jpg?t=1740033204",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/ss_f356434b667dd6f5ff948a87d4d8486d29e31b36.1920x1080.jpg?t=1740033204",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/ss_4c0452c49441d29f962b9b5f15299edff26a5d0a.1920x1080.jpg?t=1740033204"
     ]
   },
   {
     "id": 14,
     "nome": "It Takes Two",
-    "genero": ["Aventura", "Plataforma", "Cooperativo"],
+    "genero": [
+      "Aventura",
+      "Plataforma",
+      "Cooperativo"
+    ],
     "descricao": "Embarque na jornada mais louca da sua vida em It Takes Two, uma aventura de plataforma que quebra gêneros criada puramente para o modo cooperativo.",
     "anoLancamento": 2021,
     "requisitos": {
       "minimos": "Windows 8.1 64-bit, Intel Core i3-2100T / AMD FX 6100, 8 GB RAM, Nvidia GTX 660 / AMD R7 260x",
       "recomendados": "Windows 10 64-bit, Intel Core i5 3570K / AMD Ryzen 3 1300x, 16 GB RAM, Nvidia GTX 980 / AMD R9 290X"
     },
-    "preco": 199.00,
+    "preco": 199,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/ss_3e59753eefaba9a7704a18e902b48e8d38e95e0b.1920x1080.jpg?t=1777395376",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/ss_6e987a0678b013bfd0073a9ac4703e1f04ca4dea.1920x1080.jpg?t=1777395376",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/ss_fdac523e3ea4d2f32a44449bb8c224857563bd7d.1920x1080.jpg?t=1777395376"
     ]
   },
   {
     "id": 15,
     "nome": "Portal 2",
-    "genero": ["Quebra-cabeça", "Cooperativo"],
+    "genero": [
+      "Quebra-cabeça",
+      "Cooperativo"
+    ],
     "descricao": "Portal 2 leva a fórmula premiada de jogabilidade e história a outro nível, introduzindo um modo cooperativo totalmente novo que exige que você pense com portais.",
     "anoLancamento": 2011,
     "requisitos": {
@@ -264,15 +310,18 @@
     "preco": 32.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_f3f6787d74739d3b2ec8a484b5c994b3d31ef325.1920x1080.jpg?t=1745363004",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_6a4f5afdaa98402de9cf0b59fed27bab3256a6f4.1920x1080.jpg?t=1745363004",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1745363004"
     ]
   },
   {
     "id": 16,
     "nome": "Lethal Company",
-    "genero": ["Terror", "Aventura"],
+    "genero": [
+      "Terror",
+      "Aventura"
+    ],
     "descricao": "Você é um trabalhador contratado pela Companhia. Seu trabalho é coletar sucata de luas industrializadas e abandonadas para bater a cota, mas cuidado com o que espreita no escuro.",
     "anoLancamento": 2023,
     "requisitos": {
@@ -282,15 +331,18 @@
     "preco": 32.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/ss_78075e9a94675823024f12fce9d69b243cca94f8.1920x1080.jpg?t=1775380053",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/ss_51860be59845771c01a3a4d9ab1ebf773f16fef5.1920x1080.jpg?t=1775380053",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/ss_08fa3ef83b6eb70313119096f82285fa411f02e5.1920x1080.jpg?t=1775380053"
     ]
   },
   {
     "id": 17,
     "nome": "Among Us",
-    "genero": ["Festa", "Cooperativo"],
+    "genero": [
+      "Festa",
+      "Cooperativo"
+    ],
     "descricao": "Um jogo de festa sobre trabalho em equipe e traição para 4 a 15 jogadores online, ambientado em uma nave espacial. Encontre o Impostor!",
     "anoLancamento": 2018,
     "requisitos": {
@@ -300,15 +352,18 @@
     "preco": 16.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_b7374128e5b786a302a716bca038d604b00ffe46.1920x1080.jpg?t=1787088490",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_719484b5e0314cc2ae43793786448e032056a31d.1920x1080.jpg?t=1787088490",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_ffd9c8926cbd7fce3ca5e5efb4399c47bb196bc8.1920x1080.jpg?t=1787088490"
     ]
   },
   {
     "id": 18,
     "nome": "Phasmophobia",
-    "genero": ["Terror", "Cooperativo"],
+    "genero": [
+      "Terror",
+      "Cooperativo"
+    ],
     "descricao": "Um jogo de terror psicológico cooperativo online para 4 jogadores. Junte evidências paranormais usando equipamentos de caça a fantasmas autênticos.",
     "anoLancamento": 2020,
     "requisitos": {
@@ -318,15 +373,18 @@
     "preco": 46.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ec30a770064ea10c2bcfb1b3002a3dbd086be516/ss_ec30a770064ea10c2bcfb1b3002a3dbd086be516.1920x1080.jpg?t=1787675345",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/e9b67c7a3744a36cd5cc29adc13c6caaa4172e26/ss_e9b67c7a3744a36cd5cc29adc13c6caaa4172e26.1920x1080.jpg?t=1787675345",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/1ec54d1d45005e5ddd8360b05e5bbdea3a9090f2/ss_1ec54d1d45005e5ddd8360b05e5bbdea3a9090f2.1920x1080.jpg?t=1787675345"
     ]
   },
   {
     "id": 19,
     "nome": "Keep Talking and Nobody Explodes",
-    "genero": ["Festa", "Cooperativo"],
+    "genero": [
+      "Festa",
+      "Cooperativo"
+    ],
     "descricao": "Um jogador está preso com uma bomba-relógio. Os outros jogadores têm o manual de desarmamento. Conversem rápido, pois o tempo está acabando!",
     "anoLancamento": 2015,
     "requisitos": {
@@ -336,15 +394,18 @@
     "preco": 46.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/ss_55f22f9996c327c281d241ed09d43c74337d7e30.1920x1080.jpg?t=1699020889",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/ss_cfaf92410612fef91cde9fe27f3cdcbdcf5a1380.1920x1080.jpg?t=1699020889",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/ss_11c9963bc5d93a2c31857c94760305208fc9b023.1920x1080.jpg?t=1699020889"
     ]
   },
   {
     "id": 20,
     "nome": "Gang Beasts",
-    "genero": ["Festa", "Cooperativo"],
+    "genero": [
+      "Festa",
+      "Cooperativo"
+    ],
     "descricao": "Gang Beasts é um jogo multijogador de festa com personagens gelatinosos mal-humorados, sequências de combates corpo a corpo bizarros e ambientes perigosos.",
     "anoLancamento": 2017,
     "requisitos": {
@@ -354,33 +415,40 @@
     "preco": 36.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/ss_0476d6b0403313cb4fa727fd99146762eb80f611.1920x1080.jpg?t=1780410654",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/ss_0e7190e5cee562fa851f23bfeb65b336550a6d18.1920x1080.jpg?t=1780410654",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/ss_1778496dc8675159f7cb7ded7f6806ad4c1e2ccf.1920x1080.jpg?t=1780410654"
     ]
   },
   {
     "id": 21,
     "nome": "Cult of the Lamb",
-    "genero": ["Ação", "Simulação", "Gerenciamento"],
+    "genero": [
+      "Ação",
+      "Simulação",
+      "Gerenciamento"
+    ],
     "descricao": "Comece seu próprio culto em uma terra de falsos profetas, aventurando-se em regiões diversas e misteriosas para construir uma comunidade leal de adoradores da floresta.",
     "anoLancamento": 2022,
     "requisitos": {
       "minimos": "Windows 7, Intel Core i3-3240, 4 GB RAM, GeForce GTX 560 Ti",
       "recomendados": "Windows 10, Intel Core i5-3470, 8 GB RAM, GeForce GTX 1050"
     },
-    "preco": 64.90,
+    "preco": 64.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/ss_3bda2c2e740660fcde8c42eafab4cb7574ab54e6.1920x1080.jpg?t=1786554901",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/ss_805babf3c8dec217798c836daea48a63b47c192b.1920x1080.jpg?t=1786554901",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/ss_b26625d6f64a739ed1ddf832a5d26b665ab0619f.1920x1080.jpg?t=1786554901"
     ]
   },
   {
     "id": 22,
     "nome": "Bloons TD 6",
-    "genero": ["Estratégia", "Tower Defense"],
+    "genero": [
+      "Estratégia",
+      "Tower Defense"
+    ],
     "descricao": "Junte-se a milhões de outros jogadores e desfrute de horas intermináveis do melhor jogo de defesa de torres disponível. Construa sua defesa perfeita a partir de uma combinação incrível de Torres de Macaco.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -390,15 +458,19 @@
     "preco": 27.89,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/ss_a20e85177d96408281e0672927f8e9137c1f423a.1920x1080.jpg?t=1782123772",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/ss_c8525f327db944b0c0b9cedeeeca15c5c55797a2.1920x1080.jpg?t=1782123772",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/ss_4134980ce3fd32fa19b0cb9bc0ecd25674a92a90.1920x1080.jpg?t=1782123772"
     ]
   },
   {
     "id": 23,
     "nome": "Stardew Valley",
-    "genero": ["RPG", "Simulação", "Cozy"],
+    "genero": [
+      "RPG",
+      "Simulação",
+      "Cozy"
+    ],
     "descricao": "Você herdou a antiga fazenda de seu avô no Vale do Orvalho. Armado com ferramentas de segunda mão e algumas moedas, você parte para começar sua nova vida.",
     "anoLancamento": 2016,
     "requisitos": {
@@ -408,15 +480,19 @@
     "preco": 24.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg?t=1786554168",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.1920x1080.jpg?t=1786554168",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.1920x1080.jpg?t=1786554168"
     ]
   },
   {
     "id": 24,
     "nome": "Dave the Diver",
-    "genero": ["Aventura", "RPG", "Gerenciamento"],
+    "genero": [
+      "Aventura",
+      "RPG",
+      "Gerenciamento"
+    ],
     "descricao": "Mergulhe no Poço Azul durante o dia e administre um restaurante de sushi à noite neste RPG de aventura casual para um jogador.",
     "anoLancamento": 2023,
     "requisitos": {
@@ -426,15 +502,18 @@
     "preco": 59.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/ss_7c86a17d545b6260ecdcfdd62622e49dcc9011bd.1920x1080.jpg?t=1786442860",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/ss_783e1f6c2d4c358fb494d055c47c0e888922abd5.1920x1080.jpg?t=1786442860",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/ss_6eac5a3b59e181d1ffa26757b041be521bfe1779.1920x1080.jpg?t=1786442860"
     ]
   },
   {
     "id": 25,
     "nome": "Balatro",
-    "genero": ["Construção de Baralho", "Estratégia"],
+    "genero": [
+      "Construção de Baralho",
+      "Estratégia"
+    ],
     "descricao": "Balatro é um construtor de baralhos roguelike hipnoticamente satisfatório onde você joga mãos de pôquer ilegais, descobre curingas que mudam o jogo e aciona combos ultrajantes.",
     "anoLancamento": 2024,
     "requisitos": {
@@ -444,15 +523,18 @@
     "preco": 44.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg?t=1787247969",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg?t=1787247969",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_3be65a7dd3be072d567e11883d208861a7e959fa.1920x1080.jpg?t=1787247969"
     ]
   },
   {
     "id": 26,
     "nome": "Slay the Spire",
-    "genero": ["Construção de Baralho", "Roguelike"],
+    "genero": [
+      "Construção de Baralho",
+      "Roguelike"
+    ],
     "descricao": "Fundimos jogos de cartas e roguelikes para criar o melhor construtor de baralhos para um jogador. Crie um baralho único, encontre criaturas bizarras e descubra relíquias de poder imenso.",
     "anoLancamento": 2019,
     "requisitos": {
@@ -462,33 +544,41 @@
     "preco": 46.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/ss_c171816f7ecd35b5b46d2fa27532f4c5b8ca3cc5.1920x1080.jpg?t=1774015376",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/ss_01aa3e7759e457bfbf2422f31c325d7b3ba8a6eb.1920x1080.jpg?t=1774015376",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/ss_b757436d08ba08292796bfed9c60e7cc99d5f2c3.1920x1080.jpg?t=1774015376"
     ]
   },
   {
     "id": 27,
     "nome": "Factorio",
-    "genero": ["Construção de Base", "Automação", "Simulação"],
+    "genero": [
+      "Construção de Base",
+      "Automação",
+      "Simulação"
+    ],
     "descricao": "Factorio é um jogo em que você constrói e mantém fábricas. Você estará minerando recursos, pesquisando tecnologias, construindo infraestrutura e automatizando a produção.",
     "anoLancamento": 2020,
     "requisitos": {
       "minimos": "Windows 10 64-bit, Dual core 3Ghz+, 4 GB RAM, 512MB Video Memory",
       "recomendados": "Windows 11 64-bit, Quad core 3Ghz+, 8 GB RAM, 2GB Video Memory"
     },
-    "preco": 100.00,
+    "preco": 100,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_36e4d8e5540805f5ed492d24d784ed9ba661752b.1920x1080.jpg?t=1787348817",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_171f398a8e347fad650a9c1b6c3b77c612781510.1920x1080.jpg?t=1787348817",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_0bf814493f247b6baa093511b46c352cf9e98435.1920x1080.jpg?t=1787348817"
     ]
   },
   {
     "id": 28,
     "nome": "RimWorld",
-    "genero": ["Simulação", "Estratégia", "Construção de Base"],
+    "genero": [
+      "Simulação",
+      "Estratégia",
+      "Construção de Base"
+    ],
     "descricao": "Um simulador de colônias de ficção científica dirigido por uma inteligência artificial contadora de histórias. Gera histórias simulando psicologia, ecologia, tiroteios, combates corpo a corpo e muito mais.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -498,15 +588,19 @@
     "preco": 104.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/80e383ef19353058791efe17a6485849246c9c17/ss_80e383ef19353058791efe17a6485849246c9c17.1920x1080.jpg?t=1782756789",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/a6158c5cef23ac8157b37dd3eb17f3c2d2649e93/ss_a6158c5cef23ac8157b37dd3eb17f3c2d2649e93.1920x1080.jpg?t=1782756789",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/cccfece4c643fd32d438642fbea1b980bc519a48/ss_cccfece4c643fd32d438642fbea1b980bc519a48.1920x1080.jpg?t=1782756789"
     ]
   },
   {
     "id": 29,
     "nome": "Cities: Skylines",
-    "genero": ["Simulação", "Construção de Cidade", "Estratégia"],
+    "genero": [
+      "Simulação",
+      "Construção de Cidade",
+      "Estratégia"
+    ],
     "descricao": "Cities: Skylines é uma versão moderna da simulação clássica de cidades. O jogo introduz novos elementos de jogabilidade para perceber a emoção e as dificuldades de criar e manter uma cidade de verdade.",
     "anoLancamento": 2015,
     "requisitos": {
@@ -516,15 +610,19 @@
     "preco": 88.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/ss_0754001c88ad4dbfff92faf9a97e8d87cf3f8840.1920x1080.jpg?t=1787052832",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/ss_e0f842c9327df9defabf120b6c59e1ba42f54a75.1920x1080.jpg?t=1787052832",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/ss_b5a4b72062b8c4ad677b242963e88c2e624cb1f9.1920x1080.jpg?t=1787052832"
     ]
   },
   {
     "id": 30,
     "nome": "Dorfromantik",
-    "genero": ["Quebra-cabeça", "Cozy", "Construção"],
+    "genero": [
+      "Quebra-cabeça",
+      "Cozy",
+      "Construção"
+    ],
     "descricao": "Dorfromantik é um jogo de construção e quebra-cabeça relaxante onde você cria belas paisagens de vilas em constante crescimento, posicionando peças hexagonais de forma estratégica.",
     "anoLancamento": 2022,
     "requisitos": {
@@ -534,15 +632,19 @@
     "preco": 32.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/ss_a49e5fcc5301e8a05a1da7ce233a5377cf680e98.1920x1080.jpg?t=1786951108",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/ss_5388583373f0895184a83c4db492e6f6dff5af2d.1920x1080.jpg?t=1786951108",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/ss_2232950021d44e7fab5ca387470d4dd909548080.1920x1080.jpg?t=1786951108"
     ]
   },
   {
     "id": 31,
     "nome": "Core Keeper",
-    "genero": ["Aventura", "Sobrevivência", "Crafting"],
+    "genero": [
+      "Aventura",
+      "Sobrevivência",
+      "Crafting"
+    ],
     "descricao": "Explore uma vasta caverna subterrânea cheia de criaturas, relíquias e recursos em uma aventura sandbox de mineração para 1 a 8 jogadores. Minere, construa, lute e cultive para desvendar os mistérios de um núcleo antigo.",
     "anoLancamento": 2024,
     "requisitos": {
@@ -552,15 +654,19 @@
     "preco": 59.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/632a42b91e005b2d2daf99fee946732c95a9737c/ss_632a42b91e005b2d2daf99fee946732c95a9737c.1920x1080.jpg?t=1782408107",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/bca1feb5ec1bf64543f80c74effdcaed4216033c/ss_bca1feb5ec1bf64543f80c74effdcaed4216033c.1920x1080.jpg?t=1782408107",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/804585b7772d3ae5c7d56fc80401469d5bf6fd27/ss_804585b7772d3ae5c7d56fc80401469d5bf6fd27.1920x1080.jpg?t=1782408107"
     ]
   },
   {
     "id": 32,
     "nome": "Terraria",
-    "genero": ["Aventura", "Sandbox", "Sobrevivência"],
+    "genero": [
+      "Aventura",
+      "Sandbox",
+      "Sobrevivência"
+    ],
     "descricao": "Cavue, lute, explore, construa! Nada é impossível neste jogo de aventura cheio de ação. O mundo é a sua tela e o chão é a sua tinta.",
     "anoLancamento": 2011,
     "requisitos": {
@@ -570,15 +676,19 @@
     "preco": 32.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.1920x1080.jpg?t=1769844435",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.1920x1080.jpg?t=1769844435",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.1920x1080.jpg?t=1769844435"
     ]
   },
   {
     "id": 33,
     "nome": "Don't Starve Together",
-    "genero": ["Sobrevivência", "Aventura", "Crafting"],
+    "genero": [
+      "Sobrevivência",
+      "Aventura",
+      "Crafting"
+    ],
     "descricao": "Don't Starve Together é a expansão multijogador autônoma do implacável jogo de sobrevivência na natureza, Don't Starve.",
     "anoLancamento": 2016,
     "requisitos": {
@@ -588,15 +698,19 @@
     "preco": 38.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/ss_d053a7220a03ab689da9312c6d15fe8211401f55.1920x1080.jpg?t=1782413299",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/ss_37e30c4cf8c945f1958890c8fa7346af6bea547d.1920x1080.jpg?t=1782413299",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/ss_f863729856b94b3485ee80e6fd11289595f6634c.1920x1080.jpg?t=1782413299"
     ]
   },
   {
     "id": 34,
     "nome": "Subnautica",
-    "genero": ["Sobrevivência", "Exploração", "Aventura"],
+    "genero": [
+      "Sobrevivência",
+      "Exploração",
+      "Aventura"
+    ],
     "descricao": "Mergulhe nas profundezas de um mundo alienígena subaquático cheio de maravilhas e perigos. Crie equipamentos, pilote submarinos e supere a vida selvagem para explorar recifes e cavernas.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -606,15 +720,19 @@
     "preco": 59.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.1920x1080.jpg?t=1777456112",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.1920x1080.jpg?t=1777456112"
     ]
   },
   {
     "id": 35,
     "nome": "Valheim",
-    "genero": ["Sobrevivência", "Exploração", "Aventura"],
+    "genero": [
+      "Sobrevivência",
+      "Exploração",
+      "Aventura"
+    ],
     "descricao": "Um jogo brutal de exploração e sobrevivência para 1 a 10 jogadores, ambientado em um purgatório gerado procedimentalmente e inspirado na cultura viking.",
     "anoLancamento": 2021,
     "requisitos": {
@@ -624,15 +742,19 @@
     "preco": 37.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_a600a7d4ca954543e22f571a9629521a13f82143.1920x1080.jpg?t=1786012504",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_cd0262c5abf8a90ee5e1059acafc5a92b6be0e73.1920x1080.jpg?t=1786012504",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_3db385fc1223914dadb199ac8682683a8c59454e.1920x1080.jpg?t=1786012504"
     ]
   },
   {
     "id": 36,
     "nome": "Rust",
-    "genero": ["Ação", "Sobrevivência", "Multijogador"],
+    "genero": [
+      "Ação",
+      "Sobrevivência",
+      "Multijogador"
+    ],
     "descricao": "O único objetivo em Rust é sobreviver. Supere a fome, a sede e o frio. Construa fogueiras, abrigos e proteja-se contra outros jogadores e animais perigosos.",
     "anoLancamento": 2018,
     "requisitos": {
@@ -642,15 +764,19 @@
     "preco": 107.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_271feae67943bdc141c1249aba116349397e9ba9.1920x1080.jpg?t=1781536981",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.1920x1080.jpg?t=1781536981",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.1920x1080.jpg?t=1781536981"
     ]
   },
   {
     "id": 37,
     "nome": "Palworld",
-    "genero": ["Ação", "Aventura", "Sobrevivência"],
+    "genero": [
+      "Ação",
+      "Aventura",
+      "Sobrevivência"
+    ],
     "descricao": "Lute, cultive, construa e trabalhe ao lado de criaturas misteriosas chamadas 'Pals' neste inovador jogo de sobrevivência e criação em mundo aberto multijogador.",
     "anoLancamento": 2024,
     "requisitos": {
@@ -660,15 +786,19 @@
     "preco": 73.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_f81b7c4f20be3b99f76a1415c4cdb9b444c99b97.1920x1080.jpg?t=1784714419",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/648ed4266fc18f413292292741304ef648421c55/ss_648ed4266fc18f413292292741304ef648421c55.1920x1080.jpg?t=1784714419",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_b3cea7c9f04a67d784d4c6a0c157a11d6268b189.1920x1080.jpg?t=1784714419"
     ]
   },
   {
     "id": 38,
     "nome": "Deep Rock Galactic",
-    "genero": ["Ação", "FPS", "Cooperativo"],
+    "genero": [
+      "Ação",
+      "FPS",
+      "Cooperativo"
+    ],
     "descricao": "Deep Rock Galactic é um jogo de tiro em primeira pessoa cooperativo para 1 a 4 jogadores com anões espaciais, ambientes 100% destrutíveis e hordas de monstros alienígenas.",
     "anoLancamento": 2020,
     "requisitos": {
@@ -678,105 +808,125 @@
     "preco": 73.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/49a57d16c55b74a6f835c590421d299d417af4f8/ss_49a57d16c55b74a6f835c590421d299d417af4f8.1920x1080.jpg?t=1786014445",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/5ffa803484da48da16db9006d7f4313db8999c2a/ss_5ffa803484da48da16db9006d7f4313db8999c2a.1920x1080.jpg?t=1786014445",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/cf8c347fac940f99a9a256730aca3cb647cb563f/ss_cf8c347fac940f99a9a256730aca3cb647cb563f.1920x1080.jpg?t=1786014445"
     ]
   },
   {
     "id": 39,
     "nome": "No Man's Sky",
-    "genero": ["Aventura", "Exploração", "Sobrevivência"],
+    "genero": [
+      "Aventura",
+      "Exploração",
+      "Sobrevivência"
+    ],
     "descricao": "No Man's Sky é um jogo focado em exploração e sobrevivência em um universo infinito gerado procedimentalmente, cheio de sistemas solares, planetas e formas de vida únicas.",
     "anoLancamento": 2016,
     "requisitos": {
       "minimos": "Windows 10/11 64-bit, Intel Core i3, 8 GB RAM, NVIDIA GTX 1060",
       "recomendados": "Windows 10/11 64-bit, Intel Core i5, 16 GB RAM, NVIDIA RTX 2060"
     },
-    "preco": 162.00,
+    "preco": 162,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/461fd47ac75ae169f274f0c8b222ad77fbc45ce7/ss_461fd47ac75ae169f274f0c8b222ad77fbc45ce7.1920x1080.jpg?t=1787045299",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/71f533720e58e1fb5dd61f23388abfe4f9caa6b5/ss_71f533720e58e1fb5dd61f23388abfe4f9caa6b5.1920x1080.jpg?t=1787045299",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/6db1fa75dba6d47fa8484c1565fc544023c300d0/ss_6db1fa75dba6d47fa8484c1565fc544023c300d0.1920x1080.jpg?t=1787045299"
     ]
   },
   {
     "id": 40,
     "nome": "Sea of Thieves",
-    "genero": ["Aventura", "Multijogador", "Mundo Aberto"],
+    "genero": [
+      "Aventura",
+      "Multijogador",
+      "Mundo Aberto"
+    ],
     "descricao": "Sea of Thieves oferece a experiência pirata definitiva, desde a navegação e combate até a exploração e saque. Viva a vida dos seus sonhos em alto-mar.",
     "anoLancamento": 2020,
     "requisitos": {
       "minimos": "Windows 10, Intel Iris Plus Graphics 640 / Nvidia GeForce GTX 650, 4 GB RAM",
       "recomendados": "Windows 10, Nvidia GeForce GTX 770 / AMD Radeon R9 380X, 8 GB RAM"
     },
-    "preco": 149.00,
+    "preco": 149,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/ss_ec623c77d75dfa098c622b547b1ab21ad4cae0a8.1920x1080.jpg?t=1782135471",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/ss_6ea04bdc415c336a195555aec4b97a73a9910fc1.1920x1080.jpg?t=1782135471",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/ss_2144ac860fd64d82cb9cc49680f5087c7bb8fe2f.1920x1080.jpg?t=1782135471"
     ]
   },
   {
     "id": 41,
     "nome": "Elden Ring",
-    "genero": ["Ação", "RPG"],
+    "genero": [
+      "Ação",
+      "RPG"
+    ],
     "descricao": "Desbrave as Terras Intermedias em uma fantasia sombria criada em parceria por Hidetaka Miyazaki e George R. R. Martin.",
     "anoLancamento": 2022,
     "requisitos": {
       "minimos": "Windows 10, Intel Core i5-8400 ou Ryzen 3 3300X, 12 GB RAM, GTX 1060 3 GB ou RX 580 4 GB, 60 GB",
       "recomendados": "Windows 11, Intel Core i7-8700K ou Ryzen 5 3600X, 16 GB RAM, GTX 1070 8 GB ou Vega 56 8 GB, 60 GB"
     },
-    "preco": 229.90,
+    "preco": 229.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_943bf6fe62352757d9070c1d33e50b92fe8539f1.1920x1080.jpg?t=1784684281",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_dcdac9e4b26ac0ee5248bfd2967d764fd00cdb42.1920x1080.jpg?t=1784684281",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_3c41384a24d86dddd58a8f61db77f9dc0bfda8b5.1920x1080.jpg?t=1784684281"
     ]
   },
   {
     "id": 42,
     "nome": "Cyberpunk 2077",
-    "genero": ["RPG", "Ação"],
+    "genero": [
+      "RPG",
+      "Ação"
+    ],
     "descricao": "Explore Night City, uma megalopolis obcecada por poder, glamour e modificacoes corporais, em uma aventura narrativa de mundo aberto.",
     "anoLancamento": 2020,
     "requisitos": {
       "minimos": "Windows 10 64-bit, Intel Core i7-6700 ou Ryzen 5 1600, 12 GB RAM, GTX 1060 6 GB ou RX 580 8 GB, 70 GB SSD",
       "recomendados": "Windows 10 64-bit, Intel Core i7-12700 ou Ryzen 7 7800X3D, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 70 GB SSD"
     },
-    "preco": 199.90,
+    "preco": 199.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg?t=1784714077",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_0e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg?t=1784714077",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_af2804aa4bf35d4251043744412ce3b359a125ef.1920x1080.jpg?t=1784714077"
     ]
   },
   {
     "id": 43,
     "nome": "Baldur's Gate 3",
-    "genero": ["RPG", "Estratégia"],
+    "genero": [
+      "RPG",
+      "Estratégia"
+    ],
     "descricao": "Reuna seu grupo e escreva uma historia de amizade, traicao e aventura em um RPG de fantasia baseado em D&D.",
     "anoLancamento": 2023,
     "requisitos": {
       "minimos": "Windows 10 64-bit, Intel i5-4690 ou FX 8350, 8 GB RAM, GTX 970 ou RX 480, 150 GB SSD",
       "recomendados": "Windows 10 64-bit, Intel i7-8700K ou Ryzen 5 3600, 16 GB RAM, RTX 2060 Super ou RX 5700 XT, 150 GB SSD"
     },
-    "preco": 199.90,
+    "preco": 199.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_c73bc54415178c07fef85f54ee26621728c77504.1920x1080.jpg?t=1777363040",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_73d93bea842b93914d966622104dcb8c0f42972b.1920x1080.jpg?t=1777363040",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_cf936d31061b58e98e0c646aee00e6030c410cda.1920x1080.jpg?t=1777363040"
     ]
   },
   {
     "id": 44,
     "nome": "The Witcher 3: Wild Hunt",
-    "genero": ["RPG", "Ação"],
+    "genero": [
+      "RPG",
+      "Ação"
+    ],
     "descricao": "Você é Geralt de Rivia, caçador de monstros em um mundo aberto devastado pela guerra e infestado de criaturas.",
     "anoLancamento": 2015,
     "requisitos": {
@@ -786,15 +936,18 @@
     "preco": 129.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.1920x1080.jpg?t=1787688132",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.1920x1080.jpg?t=1787688132",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_112b1e176c1bd271d8a565eacb6feaf90f240bb2.1920x1080.jpg?t=1787688132"
     ]
   },
   {
     "id": 45,
     "nome": "Red Dead Redemption 2",
-    "genero": ["Ação", "Aventura"],
+    "genero": [
+      "Ação",
+      "Aventura"
+    ],
     "descricao": "Vencedor de mais de 175 prêmios de Jogo do Ano, RDR2 é a épica história de Arthur Morgan e da gangue de Van der Linde.",
     "anoLancamento": 2019,
     "requisitos": {
@@ -804,15 +957,18 @@
     "preco": 299.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.1920x1080.jpg?t=1759502961",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.1920x1080.jpg?t=1759502961",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.1920x1080.jpg?t=1759502961"
     ]
   },
   {
     "id": 46,
     "nome": "Hades",
-    "genero": ["Roguelike", "Ação"],
+    "genero": [
+      "Roguelike",
+      "Ação"
+    ],
     "descricao": "Lute para escapar do submundo em um roguelike eletrizante, onde cada tentativa revela uma nova parte da historia.",
     "anoLancamento": 2020,
     "requisitos": {
@@ -822,15 +978,18 @@
     "preco": 73.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg?t=1758127023",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.1920x1080.jpg?t=1758127023",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_68300459a8c3daacb2ec687adcdbf4442fcc4f47.1920x1080.jpg?t=1758127023"
     ]
   },
   {
     "id": 47,
     "nome": "Hades II",
-    "genero": ["Roguelike", "Ação"],
+    "genero": [
+      "Roguelike",
+      "Ação"
+    ],
     "descricao": "Desafie o Titã do Tempo nesta sequência mágica do aclamado roguelike de ação, assumindo o papel da Princesa do Submundo.",
     "anoLancamento": 2024,
     "requisitos": {
@@ -840,63 +999,73 @@
     "preco": 73.99,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_ef0f63061d0a0a9a7e46f3b84f125d25330e8f19.1920x1080.jpg?t=1779901265",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_f28befd916e59b8bf0a8a801b8a498b8adaa01eb.1920x1080.jpg?t=1779901265",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_b88cb7b48a86f07a7288bf37141f6558279f9bfc.1920x1080.jpg?t=1779901265"
     ]
   },
   {
     "id": 48,
     "nome": "Sekiro: Shadows Die Twice",
-    "genero": ["Ação", "Aventura"],
+    "genero": [
+      "Ação",
+      "Aventura"
+    ],
     "descricao": "Trace seu próprio caminho de vingança em uma aventura cheia de combate refinado criada pela FromSoftware.",
     "anoLancamento": 2019,
     "requisitos": {
       "minimos": "Windows 7 64-bit, Intel Core i3-2100 / AMD FX-6300, 4 GB RAM, NVIDIA GeForce GTX 760",
       "recomendados": "Windows 10 64-bit, Intel Core i5-2500K / AMD Ryzen 5 1400, 8 GB RAM, NVIDIA GeForce GTX 970"
     },
-    "preco": 274.90,
+    "preco": 274.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.1920x1080.jpg?t=1762888662",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/ss_2685dd844a2a523b6c7ec207d46a538db6a908cd.1920x1080.jpg?t=1762888662",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/ss_15f0e9982621aed44900215ad283811af0779b1d.1920x1080.jpg?t=1762888662"
     ]
   },
   {
     "id": 49,
     "nome": "Helldivers 2",
-    "genero": ["Ação", "Tiro", "Cooperativo"],
+    "genero": [
+      "Ação",
+      "Tiro",
+      "Cooperativo"
+    ],
     "descricao": "A última linha de ofensa da galáxia. Junte-se e lute pela liberdade em uma galáxia hostil neste jogo de tiro cooperativo frenético.",
     "anoLancamento": 2024,
     "requisitos": {
       "minimos": "Windows 10, Intel Core i7-4790K / AMD Ryzen 5 1500X, 8 GB RAM, NVIDIA GeForce GTX 1050 Ti",
       "recomendados": "Windows 10, Intel Core i7-9700K / AMD Ryzen 7 3700X, 16 GB RAM, NVIDIA GeForce RTX 2060"
     },
-    "preco": 199.50,
+    "preco": 199.5,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/aed08979e15f54798f287dd8820fb5838476b5fa/ss_aed08979e15f54798f287dd8820fb5838476b5fa.1920x1080.jpg?t=1786525389",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/71ef7c65fcf63ff974ce42150190c0420c66c72b/ss_71ef7c65fcf63ff974ce42150190c0420c66c72b.1920x1080.jpg?t=1786525389",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6c8b61a7c63479b6f526d285af6687a362d5d7ae/ss_6c8b61a7c63479b6f526d285af6687a362d5d7ae.1920x1080.jpg?t=1786525389"
     ]
   },
   {
     "id": 50,
     "nome": "Grand Theft Auto V",
-    "genero": ["Ação", "Mundo Aberto"],
+    "genero": [
+      "Ação",
+      "Mundo Aberto"
+    ],
     "descricao": "Explore o mundo aberto de Los Santos e Blaine County na experiência definitiva de Grand Theft Auto V.",
     "anoLancamento": 2015,
     "requisitos": {
       "minimos": "Windows 10 64-bit, Intel Core 2 Quad CPU Q6600 @ 2.40GHz / AMD Phenom 9850 Quad-Core Processor @ 2.5GHz, 4 GB RAM, NVIDIA 9800 GT 1GB",
       "recomendados": "Windows 10 64-bit, Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz, 8 GB RAM, NVIDIA GTX 660 2GB"
     },
-    "preco": 83.90,
+    "preco": 83.9,
     "capa": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg",
     "galeria": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/page_bg_generated_v6b.jpg",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_hero.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_32aa18ab3175e3002217862dd5917646d298ab6b.1920x1080.jpg?t=1765387725",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_2744f112fa060320d191a50e8b3a92441a648a56.1920x1080.jpg?t=1765387725",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_da39c16db175f6973770bae6b91d411251763152.1920x1080.jpg?t=1765387725"
     ]
   }
 ]
