@@ -67,9 +67,9 @@ function renderProducts(list, resetCount = false) {
   count.textContent = visibleProducts.length === list.length
     ? `${list.length} ${list.length === 1 ? "jogo encontrado" : "jogos encontrados"}`
     : `${visibleProducts.length} de ${list.length} jogos`;
-  grid.innerHTML = visibleProducts.map((product) => `
+  grid.innerHTML = visibleProducts.map((product, index) => `
     <article class="product-card">
-      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async"></a>
+      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="${index < 4 ? "eager" : "lazy"}" decoding="async"></a>
       <div class="card-body">
         <div class="card-meta"><span>${getCategories(product).join(" / ")}</span><span>${product.anoLancamento}</span></div>
         <h3><a href="produto.html?id=${product.id}">${product.nome}</a></h3>
