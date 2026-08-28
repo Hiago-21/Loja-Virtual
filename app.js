@@ -1,4 +1,5 @@
 const CART_KEY = "steamgrid-cart";
+const ORDER_KEY = "steamgrid-last-order";
 const THEME_KEY = "steamgrid-theme";
 let products = [];
 let selectedGenre = "Todos";
@@ -21,6 +22,18 @@ function getCartIds() {
 function saveCartIds(ids) {
   localStorage.setItem(CART_KEY, JSON.stringify(ids));
   updateCartCount();
+}
+
+function saveOrder(order) {
+  localStorage.setItem(ORDER_KEY, JSON.stringify(order));
+}
+
+function handleImageError(event) {
+  const image = event.currentTarget;
+  if (image.dataset.fallbackApplied) return;
+  image.dataset.fallbackApplied = "true";
+  image.src = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="460" height="215" viewBox="0 0 460 215"><rect width="460" height="215" fill="#26394a"/><path d="M0 175 115 92l86 60 72-78 187 101H0Z" fill="#36556b"/><circle cx="350" cy="64" r="27" fill="#65b8e8"/><text x="230" y="125" fill="#edf4fa" font-family="sans-serif" font-size="18" text-anchor="middle">Imagem indisponível</text></svg>`)}`;
+  image.classList.add("image-fallback");
 }
 
 function updateCartCount() {
@@ -69,7 +82,7 @@ function renderProducts(list, resetCount = false) {
     : `${visibleProducts.length} de ${list.length} jogos`;
   grid.innerHTML = visibleProducts.map((product, index) => `
     <article class="product-card">
-      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="${index < 4 ? "eager" : "lazy"}" decoding="async"></a>
+      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="${index < 4 ? "eager" : "lazy"}" decoding="async" onerror="handleImageError(event)"></a>
       <div class="card-body">
         <div class="card-meta"><span>${getCategories(product).join(" / ")}</span><span>${product.anoLancamento}</span></div>
         <h3><a href="produto.html?id=${product.id}">${product.nome}</a></h3>
@@ -145,9 +158,9 @@ function renderProductDetail() {
   const gallery = [product.capa, ...(product.galeria || [])];
   detail.innerHTML = `
     <div class="detail-media">
-      <img class="detail-image" id="detail-main-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" decoding="async">
+      <img class="detail-image" id="detail-main-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" decoding="async" onerror="handleImageError(event)">
       <div class="detail-gallery" aria-label="Galeria de imagens de ${product.nome}">
-        ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt="" width="1920" height="1080" loading="lazy" decoding="async"></button>`).join("")}
+        ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt="" width="1920" height="1080" loading="lazy" decoding="async" onerror="handleImageError(event)"></button>`).join("")}
       </div>
     </div>
     <div class="detail-info"><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div><button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button><div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
@@ -169,7 +182,7 @@ function renderCart() {
   const total = cartProducts.reduce((sum, product) => sum + product.preco, 0);
   document.querySelector("#cart-total").textContent = formatPrice(total);
   document.querySelector("#checkout-link").style.display = cartProducts.length ? "inline-flex" : "none";
-  list.innerHTML = cartProducts.length ? cartProducts.map((product) => `<div class="cart-item"><img src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async"><div class="cart-item-main"><h3>${product.nome}</h3><p>${getCategories(product).join(" / ")} · ${formatPrice(product.preco)}</p></div><button class="remove-button" data-remove="${product.id}" type="button">Remover</button></div>`).join("") : '<div class="empty-state"><h3>Seu carrinho está vazio</h3><p>Escolha uma aventura na loja.</p></div>';
+  list.innerHTML = cartProducts.length ? cartProducts.map((product) => `<div class="cart-item"><img src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async" onerror="handleImageError(event)"><div class="cart-item-main"><h3>${product.nome}</h3><p>${getCategories(product).join(" / ")} · ${formatPrice(product.preco)}</p></div><button class="remove-button" data-remove="${product.id}" type="button">Remover</button></div>`).join("") : '<div class="empty-state"><h3>Seu carrinho está vazio</h3><p>Escolha uma aventura na loja.</p></div>';
   list.querySelectorAll("[data-remove]").forEach((button) => button.addEventListener("click", () => {
     saveCartIds(getCartIds().filter((id) => id !== Number(button.dataset.remove)));
     renderCart();
@@ -184,6 +197,10 @@ function setupCheckout() {
   let pixTimer;
   const getCartProducts = () => products.filter((product) => getCartIds().includes(product.id));
   const getTotal = () => getCartProducts().reduce((total, product) => total + product.preco, 0);
+  if (!getCartProducts().length) {
+    window.location.replace("carrinho.html");
+    return;
+  }
   const formatTime = (seconds) => `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
   const getInterestRate = (count) => count === 1 ? 0 : Math.min(0.02 * (count - 1), 0.22);
   const formatCardNumber = (value) => value.replace(/\D/g, "").slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
@@ -266,11 +283,62 @@ function setupCheckout() {
   paymentSelect.addEventListener("change", renderPaymentDetails);
   form.elements.nome.addEventListener("input", updateBoletoCustomer);
   form.elements.email.addEventListener("input", updateBoletoCustomer);
-  form.addEventListener("submit", () => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const cartProducts = getCartProducts();
+    if (!cartProducts.length) {
+      window.location.replace("carrinho.html");
+      return;
+    }
+    const cardNumber = form.elements["numero-cartao"]?.value.replace(/\D/g, "") || "";
+    const installments = Number(form.elements.parcelas?.value || 1);
+    const order = {
+      numeroPedido: `SG-${Date.now()}`,
+      criadoEm: new Date().toISOString(),
+      cliente: {
+        nome: form.elements.nome.value.trim(),
+        email: form.elements.email.value.trim()
+      },
+      itens: cartProducts.map((product) => ({
+        id: product.id,
+        nome: product.nome,
+        categorias: getCategories(product),
+        preco: product.preco,
+        quantidade: 1
+      })),
+      pagamento: {
+        tipo: paymentSelect.value,
+        nome: paymentSelect.options[paymentSelect.selectedIndex].text,
+        parcelas: paymentSelect.value === "cartao" ? installments : null,
+        cartaoFinal: paymentSelect.value === "cartao" && cardNumber ? `**** **** **** ${cardNumber.slice(-4)}` : null
+      },
+      total: getTotal(),
+      observacao: "Este pedido e uma simulacao local. Nenhum dado e enviado para um banco de dados ou servico externo."
+    };
+    saveOrder(order);
     saveCartIds([]);
     clearInterval(pixTimer);
+    window.location.href = form.action;
   });
   renderPaymentDetails();
+}
+
+function renderFeedback() {
+  const preview = document.querySelector("#order-json");
+  const toggle = document.querySelector("#show-order-json");
+  if (!preview || !toggle) return;
+  const order = JSON.parse(localStorage.getItem(ORDER_KEY) || "null");
+  if (!order) {
+    toggle.hidden = true;
+    return;
+  }
+  preview.textContent = JSON.stringify(order, null, 2);
+  toggle.addEventListener("click", () => {
+    const isHidden = preview.hidden;
+    preview.hidden = !isHidden;
+    toggle.setAttribute("aria-expanded", String(isHidden));
+    toggle.textContent = isHidden ? "Ocultar JSON do pedido" : "Ver possível JSON enviado ao banco de dados fictício";
+  });
 }
 
 async function loadProducts() {
@@ -285,6 +353,7 @@ async function loadProducts() {
     renderProductDetail();
     renderCart();
     setupCheckout();
+    renderFeedback();
   } catch (error) {
     const target = document.querySelector("#product-grid, #product-detail, #cart-list");
     if (target) target.innerHTML = `<div class="empty-state"><h3>Não foi possível carregar o catálogo.</h3><p>${error.message}</p></div>`;

@@ -145,6 +145,11 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 - [ ] Corrigir eventuais problemas de acessibilidade encontrados pelo Lighthouse.
 - [ ] Adicionar estados de carregamento e erro para o catálogo.
 
+### Validação concluída
+
+- [x] Corrigi o contraste dos textos secundários e confirmei 100% de eficácia no Lighthouse.
+- [x] Reservei o espaço das imagens e ajustei o carregamento das capas para evitar deslocamento visual.
+
 ## 7. Requisitos da entrega
 
 ### Já implementei
@@ -157,6 +162,8 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 ### Ainda preciso implementar ou concluir
 
 - [x] Publicar uma única URL pública com a loja funcionando no GitHub Pages.
+- [x] Adicionar metadescrição nas páginas HTML.
+- [x] Otimizar imagens, CLS e carregamento inicial conforme as recomendações do Lighthouse.
 - [ ] Inserir o vídeo não listado do YouTube ou Loom em `como-fiz.html`.
 - [ ] Gravar um vídeo de 5 a 8 minutos com minha voz e a navegação ao vivo.
 - [ ] Mostrar no vídeo a organização dos arquivos e as decisões do projeto.
@@ -178,10 +185,11 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ## Próxima sequência de trabalho
 
-1. [ ] Rodar o Lighthouse na URL pública e registrar os scores.
-2. [ ] Corrigir os problemas prioritários de acessibilidade, carregamento e responsividade.
-3. [ ] Validar no celular e em aba anônima os filtros, a galeria, o carrinho e o checkout.
-4. [ ] Implementar o bloqueio do checkout com carrinho vazio.
-5. [ ] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
-6. [ ] Conferir se todas as imagens externas carregam e definir um fallback para imagens quebradas.
-7. [ ] Fazer a entrega com a URL pública e o repositório.
+1. [ ] Validar no celular e em aba anônima os filtros, a galeria, o carrinho e o checkout.
+2. [ ] Implementar o bloqueio do checkout com carrinho vazio.
+3. [ ] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
+4. [ ] Conferir se todas as imagens externas carregam e definir um fallback para imagens quebradas.
+5. [ ] Fazer a entrega com a URL pública e o repositório.
+
+Gravar e inserir o vídeo em como-fiz.html, pois é o maior requisito ainda não iniciado.
+Fazer a entrega final: testar a URL pública, atualizar o Planejamento.md e publicar as URLs no canal do Bootcamp.
