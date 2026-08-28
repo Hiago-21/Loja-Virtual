@@ -156,7 +156,7 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .boleto-product, .boleto-summary { display: flex; justify-content: space-between; gap: 18px; }
 .boleto-product span { overflow-wrap: anywhere; }
 .boleto-product strong, .boleto-summary strong { white-space: nowrap; }
-.boleto-summary { padding-top: 14px; }
+.boleto-summary { display: grid; gap: 8px; padding-top: 14px; }
 .boleto-summary p { margin: 0; color: var(--muted); }
 .qr-code { position: relative; isolation: isolate; width: 184px; height: 184px; margin: 0 auto; border: 10px solid #fff; background-color: #fff; background-image: repeating-linear-gradient(0deg, #111 0 5px, transparent 5px 10px), repeating-linear-gradient(90deg, transparent 0 5px, #111 5px 10px); background-size: 10px 10px; box-shadow: 0 0 0 1px #d8d8d8, inset 0 0 0 2px #111; }
 .qr-code::before, .qr-code::after, .qr-code span::before { content: ""; position: absolute; z-index: 2; width: 31px; height: 31px; border: 7px solid #111; background: #fff; box-shadow: inset 0 0 0 7px #111; }
@@ -172,6 +172,9 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .secondary-button { justify-self: start; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 5px; padding: 10px 14px; font-weight: 800; }
 .secondary-button:hover { background: var(--accent); color: #fff; }
 .cart-list { display: grid; gap: 12px; margin: 28px 0; }
+.cart-summary { display: grid; gap: 10px; border-top: 1px solid var(--line); padding-top: 16px; }
+.cart-summary > div:not(.cart-total) { display: flex; justify-content: space-between; gap: 18px; color: var(--muted); }
+.cart-summary p { margin: 4px 0 6px; color: var(--accent); font-size: .88rem; font-weight: 800; }
 .cart-item { display: flex; gap: 18px; align-items: center; border-bottom: 1px solid var(--line); padding: 0 0 14px; }
 .cart-item img { width: 120px; height: 76px; object-fit: cover; }
 .cart-item-main { flex: 1; }
@@ -180,6 +183,17 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
 .remove-button { border: 0; background: none; color: var(--muted); }
 .remove-button:hover { color: var(--accent); }
 .cart-total { display: flex; justify-content: space-between; align-items: center; border-top: 2px solid var(--text); padding-top: 18px; font-size: 1.25rem; font-weight: 900; }
+.recommendations { margin-top: 68px; border-top: 1px solid var(--line); padding-top: 8px; }
+.recommendations .section-heading { padding-bottom: 18px; }
+.recommendations .section-heading span { color: var(--muted); font-size: .82rem; }
+.recommendation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.recommendation-item { display: flex; min-width: 0; gap: 12px; border: 1px solid var(--line); background: var(--surface); padding: 10px; }
+.recommendation-item img { width: 112px; height: 58px; flex: 0 0 auto; object-fit: cover; }
+.recommendation-item > div { display: flex; min-width: 0; flex: 1; flex-direction: column; align-items: flex-start; align-self: stretch; gap: 4px; }
+.recommendation-item strong, .recommendation-item span { overflow-wrap: anywhere; }
+.recommendation-item span { color: var(--muted); font-size: .76rem; }
+.recommendation-item b { font-size: .9rem; }
+.recommendation-item .secondary-button { align-self: flex-end; margin-top: auto; padding: 7px 10px; font-size: .8rem; white-space: nowrap; }
 .success { text-align: center; padding: 80px 0; }
 .success-mark { color: var(--accent); font-size: 4rem; font-weight: 900; }
 .order-json-area { display: grid; justify-items: center; margin: 28px auto; }
@@ -198,6 +212,8 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.
   .category-panel { position: static; width: 100%; margin-top: 10px; }
   .product-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; gap: 16px; }
+  .recommendation-grid { grid-template-columns: 1fr; }
+  .recommendation-item img { width: 104px; }
   .section-heading { padding-top: 32px; }
   .footer-inner { flex-direction: column; }
 }

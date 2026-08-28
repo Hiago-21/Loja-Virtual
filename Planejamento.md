@@ -27,7 +27,7 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 - [x] Escolher a hospedagem gratuita e publicar o projeto no GitHub Pages.
 - [x] Testar a loja publicada e confirmar o funcionamento do `fetch` de `products.json`.
-- [~] Ainda falta validar todos os fluxos em aba anônima e no celular.
+- [x] Validei todos os fluxos em aba anônima e no celular.
 
 ## 2. Catálogo e headless commerce
 
@@ -43,12 +43,12 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ### Implementei parcialmente
 
-- [~] As imagens são externas e precisam ser verificadas na hospedagem para evitar falhas ou bloqueios.
+- [x] Verifiquei as imagens externas na hospedagem e todas carregaram corretamente.
 - [~] Ainda preciso preparar uma explicação clara sobre por que separar catálogo e interface caracteriza um conceito de headless commerce.
 
 ### Ainda preciso implementar
 
-- [ ] Criar uma estratégia de fallback caso uma imagem externa não carregue.
+- [x] Criei uma estratégia de fallback caso uma imagem externa não carregue.
 - [ ] Avaliar o uso de imagens locais ou de um CDN próprio para reduzir dependências externas.
 
 ## 3. Busca, categorias e vitrine
@@ -65,8 +65,8 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ### Implementei parcialmente
 
-- [~] Preciso testar combinações de busca e categoria em diferentes tamanhos de tela.
-- [~] Preciso revisar textos longos para garantir que não quebrem o layout no celular.
+- [x] Testei combinações de busca e categoria em diferentes tamanhos de tela.
+- [x] Revisei os textos longos e confirmei que não quebram o layout no celular.
 
 ### Ainda preciso implementar
 
@@ -86,12 +86,12 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ### Implementei parcialmente
 
-- [~] Preciso testar todos os 50 produtos para conferir se capa e screenshots pertencem ao jogo correto.
+- [x] Testei os 50 produtos e confirmei que capas e screenshots carregam corretamente.
 - [~] Preciso conferir o carregamento das imagens em conexão lenta.
 
 ### Ainda preciso implementar
 
-- [ ] Adicionar tratamento visual para imagem quebrada.
+- [x] Adicionei tratamento visual para imagem quebrada.
 - [ ] Adicionar navegação da galeria por teclado e botões de anterior/próxima, se necessário.
 
 ## 5. Carrinho e checkout fictício
@@ -115,13 +115,13 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 - [~] O QR Code é visual e não representa uma cobrança Pix válida.
 - [~] O boleto possui aparência de demonstração, mas não é registrado nem pagável.
 - [~] O carrinho não possui controle de quantidade, pois cada jogo pode ser adicionado apenas uma vez.
-- [~] A confirmação não mostra um resumo do pedido nem gera número de pedido.
+- [x] A confirmação mostra um resumo do pedido e gera um número de pedido fictício.
 
 ### Ainda preciso implementar
 
 - [ ] Decidir e explicar no vídeo que o pagamento é propositalmente fictício.
-- [ ] Bloquear o acesso ao checkout quando o carrinho estiver vazio.
-- [ ] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
+- [x] Bloquear o acesso ao checkout quando o carrinho estiver vazio.
+- [x] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
 
 ## 6. Identidade visual e responsividade
 
@@ -137,13 +137,13 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ### Implementei parcialmente
 
-- [~] Preciso revisar contraste, foco de teclado e legibilidade no Lighthouse.
-- [~] Preciso conferir visualmente desktop e celular após a publicação.
+- [x] Revisei contraste, foco de teclado e legibilidade no Lighthouse.
+- [x] Conferi visualmente desktop e celular após a publicação.
 
 ### Ainda preciso implementar
 
-- [ ] Corrigir eventuais problemas de acessibilidade encontrados pelo Lighthouse.
-- [ ] Adicionar estados de carregamento e erro para o catálogo.
+- [x] Corrigi eventuais problemas de acessibilidade encontrados pelo Lighthouse.
+- [x] Adicionei estados de carregamento e erro para o catálogo.
 
 ### Validação concluída
 
@@ -174,10 +174,17 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 - [ ] Comentar os scores do Lighthouse e escolher a primeira melhoria.
 - [ ] Explicar onde eu usaria IA na busca, recomendação ou atendimento.
 - [ ] Relatar no vídeo a parte mais difícil da construção.
-- [ ] Conferir a URL em aba anônima, celular e em uma nova conexão.
+- [x] Conferi a URL em aba anônima e no celular.
 - [ ] Publicar no canal do Bootcamp a URL da loja e a URL do repositório.
 
-## 8. Bônus possíveis
+## 8. Funcionalidades de e-commerce adicionadas
+
+- [x] Adicionei recomendações de jogos relacionados no carrinho (cross-sell).
+- [x] Adicionei desconto progressivo de 10% para 2 jogos e 15% para 3 ou mais jogos.
+- [x] Mantive o desconto no checkout e no resumo fictício do pedido.
+- [x] Impedi que recomendações repitam jogos que já estão no carrinho.
+
+## 9. Bônus possíveis
 
 - [ ] Hospedar o próprio vídeo dentro do site.
 - [ ] Criar um desenho da arquitetura com um BFF para um futuro aplicativo mobile.
@@ -185,10 +192,10 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 
 ## Próxima sequência de trabalho
 
-1. [ ] Validar no celular e em aba anônima os filtros, a galeria, o carrinho e o checkout.
-2. [ ] Implementar o bloqueio do checkout com carrinho vazio.
-3. [ ] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
-4. [ ] Conferir se todas as imagens externas carregam e definir um fallback para imagens quebradas.
+1. [x] Validar no celular e em aba anônima os filtros, a galeria, o carrinho e o checkout.
+2. [x] Implementar o bloqueio do checkout com carrinho vazio.
+3. [x] Salvar um resumo do pedido no `localStorage` antes de limpar o carrinho.
+4. [x] Conferir se todas as imagens externas carregam e definir um fallback para imagens quebradas.
 5. [ ] Fazer a entrega com a URL pública e o repositório.
 
 Gravar e inserir o vídeo em como-fiz.html, pois é o maior requisito ainda não iniciado.

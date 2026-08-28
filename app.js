@@ -24,6 +24,19 @@ function saveCartIds(ids) {
   updateCartCount();
 }
 
+function getDiscountRate(itemCount) {
+  if (itemCount >= 3) return 0.15;
+  if (itemCount === 2) return 0.10;
+  return 0;
+}
+
+function getCartSummary(cartProducts) {
+  const subtotal = cartProducts.reduce((sum, product) => sum + product.preco, 0);
+  const discountRate = getDiscountRate(cartProducts.length);
+  const discount = subtotal * discountRate;
+  return { subtotal, discountRate, discount, total: subtotal - discount };
+}
+
 function saveOrder(order) {
   localStorage.setItem(ORDER_KEY, JSON.stringify(order));
 }
@@ -179,12 +192,43 @@ function renderCart() {
   const list = document.querySelector("#cart-list");
   if (!list) return;
   const cartProducts = products.filter((product) => getCartIds().includes(product.id));
-  const total = cartProducts.reduce((sum, product) => sum + product.preco, 0);
-  document.querySelector("#cart-total").textContent = formatPrice(total);
+  const summary = getCartSummary(cartProducts);
+  document.querySelector("#cart-subtotal").textContent = formatPrice(summary.subtotal);
+  document.querySelector("#cart-discount").textContent = summary.discount ? `- ${formatPrice(summary.discount)}` : "R$ 0,00";
+  document.querySelector("#cart-total").textContent = formatPrice(summary.total);
+  document.querySelector("#discount-message").textContent = summary.discountRate ? `${summary.discountRate * 100}% de desconto aplicado` : cartProducts.length === 1 ? "Adicione mais um jogo e ganhe 10% de desconto." : "Adicione 2 jogos e ganhe 10% de desconto.";
   document.querySelector("#checkout-link").style.display = cartProducts.length ? "inline-flex" : "none";
   list.innerHTML = cartProducts.length ? cartProducts.map((product) => `<div class="cart-item"><img src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async" onerror="handleImageError(event)"><div class="cart-item-main"><h3>${product.nome}</h3><p>${getCategories(product).join(" / ")} · ${formatPrice(product.preco)}</p></div><button class="remove-button" data-remove="${product.id}" type="button">Remover</button></div>`).join("") : '<div class="empty-state"><h3>Seu carrinho está vazio</h3><p>Escolha uma aventura na loja.</p></div>';
   list.querySelectorAll("[data-remove]").forEach((button) => button.addEventListener("click", () => {
     saveCartIds(getCartIds().filter((id) => id !== Number(button.dataset.remove)));
+    renderCart();
+  }));
+  renderRecommendations(cartProducts);
+}
+
+function renderRecommendations(cartProducts) {
+  const section = document.querySelector("#recommendations");
+  const grid = document.querySelector("#recommendation-grid");
+  if (!section || !grid) return;
+  if (!cartProducts.length) {
+    section.hidden = true;
+    grid.innerHTML = "";
+    return;
+  }
+  const cartIds = cartProducts.map((product) => product.id);
+  const cartCategories = new Set(cartProducts.flatMap(getCategories));
+  const recommendations = products
+    .filter((product) => !cartIds.includes(product.id))
+    .sort((first, second) => {
+      const firstScore = getCategories(first).filter((category) => cartCategories.has(category)).length;
+      const secondScore = getCategories(second).filter((category) => cartCategories.has(category)).length;
+      return secondScore - firstScore;
+    })
+    .slice(0, 4);
+  section.hidden = !recommendations.length;
+  grid.innerHTML = recommendations.map((product) => `<article class="recommendation-item"><img src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="lazy" decoding="async" onerror="handleImageError(event)"><div><strong>${product.nome}</strong><span>${getCategories(product).join(" / ")}</span><b>${formatPrice(product.preco)}</b><button class="secondary-button" data-recommendation="${product.id}" type="button">Adicionar</button></div></article>`).join("");
+  grid.querySelectorAll("[data-recommendation]").forEach((button) => button.addEventListener("click", () => {
+    addToCart(Number(button.dataset.recommendation));
     renderCart();
   }));
 }
@@ -196,7 +240,7 @@ function setupCheckout() {
   const details = document.querySelector("#payment-details");
   let pixTimer;
   const getCartProducts = () => products.filter((product) => getCartIds().includes(product.id));
-  const getTotal = () => getCartProducts().reduce((total, product) => total + product.preco, 0);
+  const getTotal = () => getCartSummary(getCartProducts()).total;
   if (!getCartProducts().length) {
     window.location.replace("carrinho.html");
     return;
@@ -274,8 +318,9 @@ function setupCheckout() {
         return;
       }
       const cartProducts = getCartProducts();
+      const cartSummary = getCartSummary(cartProducts);
       const productRows = cartProducts.map((product) => `<div class="boleto-product"><span>${product.nome}</span><strong>${formatPrice(product.preco)}</strong></div>`).join("");
-      details.innerHTML = `<div class="payment-panel boleto-panel" id="boleto"><h2>Boleto bancário</h2><div class="boleto-customer"><p><strong>Nome:</strong> <span id="boleto-name">${customerName}</span></p><p><strong>E-mail:</strong> <span id="boleto-email">${customerEmail}</span></p></div><div class="boleto-products"><strong class="boleto-products-title">Jogos selecionados</strong>${productRows}</div><div class="boleto-summary"><p>Vencimento: <strong>${new Date(Date.now() + 86400000).toLocaleDateString("pt-BR")}</strong></p><p>Valor total: <strong>${formatPrice(getTotal())}</strong></p></div><p class="barcode">|||| ||| |||| | ||| || ||||</p><p class="payment-code">34191.79001 01043.510047 91020.150008 1 98760000000000</p><button class="secondary-button" id="print-boleto" type="button">Imprimir boleto</button></div>`;
+      details.innerHTML = `<div class="payment-panel boleto-panel" id="boleto"><h2>Boleto bancário</h2><div class="boleto-customer"><p><strong>Nome:</strong> <span id="boleto-name">${customerName}</span></p><p><strong>E-mail:</strong> <span id="boleto-email">${customerEmail}</span></p></div><div class="boleto-products"><strong class="boleto-products-title">Jogos selecionados</strong>${productRows}</div><div class="boleto-summary"><p>Vencimento: <strong>${new Date(Date.now() + 86400000).toLocaleDateString("pt-BR")}</strong></p><p>Subtotal: <strong>${formatPrice(cartSummary.subtotal)}</strong></p><p>Desconto: <strong>-${formatPrice(cartSummary.discount)}</strong></p><p>Valor total: <strong>${formatPrice(cartSummary.total)}</strong></p></div><p class="barcode">|||| ||| |||| | ||| || ||||</p><p class="payment-code">34191.79001 01043.510047 91020.150008 1 98760000000000</p><button class="secondary-button" id="print-boleto" type="button">Imprimir boleto</button></div>`;
       details.querySelector("#print-boleto").addEventListener("click", () => window.print());
     }
   };
@@ -312,6 +357,8 @@ function setupCheckout() {
         parcelas: paymentSelect.value === "cartao" ? installments : null,
         cartaoFinal: paymentSelect.value === "cartao" && cardNumber ? `**** **** **** ${cardNumber.slice(-4)}` : null
       },
+      subtotal: getCartSummary(cartProducts).subtotal,
+      desconto: getCartSummary(cartProducts).discount,
       total: getTotal(),
       observacao: "Este pedido e uma simulacao local. Nenhum dado e enviado para um banco de dados ou servico externo."
     };
