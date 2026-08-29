@@ -60,10 +60,19 @@ function addToCart(id) {
   saveCartIds(cart);
 }
 
+function updateBrandLogo() {
+  const isDark = document.body.classList.contains("dark-mode");
+  document.querySelectorAll(".brand-logo").forEach((logo) => {
+    logo.src = isDark ? "GameGridEscuro.png" : "GameGridClaro.png";
+    logo.alt = isDark ? "Logo GameGrid em tema escuro" : "Logo GameGrid em tema claro";
+  });
+}
+
 function setupTheme() {
   const toggle = document.querySelector("#theme-toggle");
   const storedTheme = localStorage.getItem(THEME_KEY);
   if (storedTheme === "dark") document.body.classList.add("dark-mode");
+  updateBrandLogo();
   if (!toggle) return;
   toggle.textContent = document.body.classList.contains("dark-mode") ? "☾" : "☼";
   toggle.addEventListener("click", () => {
@@ -71,6 +80,7 @@ function setupTheme() {
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
     toggle.textContent = isDark ? "☾" : "☼";
+    updateBrandLogo();
   });
 }
 
