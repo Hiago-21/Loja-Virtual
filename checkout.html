@@ -1,5 +1,66 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Catálogo de jogos atualizado via JSON. Encontre os melhores títulos, preços e requisitos em nossa vitrine curada."><title>Pagamento | GameGrid</title><link rel="stylesheet" href="style.css"></head>
-<body><header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="GameGrid home"><img class="brand-logo" src="GameGridClaro.png" alt="GameGrid" width="290" height="120"></a><nav class="nav-links"><a href="index.html">Loja</a><a href="carrinho.html">Carrinho</a></nav><div class="header-actions"><button class="icon-button" id="theme-toggle" type="button" aria-label="Alternar tema">☼</button></div></div></header><main class="page-shell content-narrow"><p class="eyebrow">Etapa final</p><h1>Quase lá.</h1><p class="hero-copy">Preencha os dados abaixo para concluir esta compra demonstrativa.</p><form class="form" action="feedback.html"><label>Nome completo<input required type="text" name="nome" placeholder="Seu nome"></label><label>E-mail<input required type="email" name="email" placeholder="voce@email.com"></label><label>Forma de pagamento<select required name="pagamento"><option value="">Selecione</option><option value="cartao">Cartão de crédito</option><option value="pix">Pix</option><option value="boleto">Boleto</option></select></label><div class="payment-details" id="payment-details" aria-live="polite"></div><button class="cta" type="submit">Finalizar pedido</button></form></main><footer class="site-footer"><div class="footer-inner"><span>GameGrid / projeto de bootcamp</span><span>Ambiente fictício</span></div></footer><script src="app.js"></script></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de checkout com dados do cliente, opções de pagamento e revisão do pedido.">
+  <title>Pagamento | GameGrid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="GameGrid home">
+        <img class="brand-logo" src="GameGridClaro.png" alt="GameGrid" width="290" height="120">
+      </a>
+      <nav class="nav-links" aria-label="Navegacao principal">
+        <a href="index.html">Loja</a>
+        <a href="carrinho.html">Carrinho</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Alternar tema">☼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell content-narrow">
+    <p class="eyebrow">Último passo</p>
+    <h1>Finalizando.</h1>
+    <p class="hero-copy">Complete os dados abaixo para concluir a compra do seu pedido.</p>
+
+    <form class="form" action="feedback.html">
+      <label>
+        Nome completo
+        <input required type="text" name="nome" placeholder="Seu nome">
+      </label>
+
+      <label>
+        E-mail
+        <input required type="email" name="email" placeholder="voce@email.com">
+      </label>
+
+      <label>
+        Forma de pagamento
+        <select required name="pagamento">
+          <option value="">Selecione</option>
+          <option value="cartao">Cartão de crédito</option>
+          <option value="pix">Pix</option>
+          <option value="boleto">Boleto</option>
+        </select>
+      </label>
+
+      <div class="payment-details" id="payment-details" aria-live="polite"></div>
+      <button class="cta" type="submit">Finalizar pedido</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>GameGrid</span>
+      <span>Checkout</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>

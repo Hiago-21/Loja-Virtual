@@ -1,5 +1,6 @@
 const CART_KEY = "gamegrid-cart";
 const ORDER_KEY = "gamegrid-last-order";
+const SOLD_KEY = "gamegrid-sold";
 const THEME_KEY = "gamegrid-theme";
 let products = [];
 let selectedGenre = "Todos";
@@ -39,6 +40,19 @@ function getCartSummary(cartProducts) {
 
 function saveOrder(order) {
   localStorage.setItem(ORDER_KEY, JSON.stringify(order));
+}
+
+function getSoldIds() {
+  return JSON.parse(localStorage.getItem(SOLD_KEY) || "[]");
+}
+
+function saveSoldIds(ids) {
+  localStorage.setItem(SOLD_KEY, JSON.stringify(ids));
+}
+
+function getAvailableProducts() {
+  const soldIds = new Set(getSoldIds());
+  return products.filter((product) => !soldIds.has(product.id));
 }
 
 function handleImageError(event) {
@@ -128,7 +142,7 @@ function setupLoadMore() {
 
 function applyFilters(resetCount = true) {
   const searchTerm = (document.querySelector("#search-input")?.value || "").toLowerCase();
-  const filtered = products.filter((product) => {
+  const filtered = getAvailableProducts().filter((product) => {
     const categories = getCategories(product);
     const matchesGenre = selectedGenre === "Todos" || categories.includes(selectedGenre);
     const matchesSearch = `${product.nome} ${categories.join(" ")} ${product.descricao}`.toLowerCase().includes(searchTerm);
@@ -143,7 +157,7 @@ function setupFilters() {
   const trigger = document.querySelector("#category-trigger");
   const panel = document.querySelector("#category-panel");
   const closeButton = document.querySelector("#category-close");
-  const genres = ["Todos", ...new Set(products.flatMap(getCategories))];
+  const genres = ["Todos", ...new Set(getAvailableProducts().flatMap(getCategories))];
   container.innerHTML = genres.map((genre) => `<button class="filter-button ${genre === "Todos" ? "active" : ""}" data-genre="${genre}" type="button">${genre}</button>`).join("");
   const closePanel = () => {
     panel.hidden = true;
@@ -171,11 +185,11 @@ function setupFilters() {
 
 function renderProductDetail() {
   const id = Number(new URLSearchParams(window.location.search).get("id"));
-  const product = products.find((item) => item.id === id);
+  const product = getAvailableProducts().find((item) => item.id === id);
   const detail = document.querySelector("#product-detail");
   if (!detail) return;
   if (!product) {
-    detail.innerHTML = '<div class="empty-state"><h1>Jogo não encontrado</h1><a class="cta" href="index.html">Voltar à loja</a></div>';
+    detail.innerHTML = '<div class="empty-state"><h1>Jogo não encontrado</h1><p>Este jogo já foi comprado e saiu da loja.</p><a class="cta" href="index.html">Voltar à loja</a></div>';
     return;
   }
   const gallery = [product.capa, ...(product.galeria || [])];
@@ -227,7 +241,7 @@ function renderRecommendations(cartProducts) {
   }
   const cartIds = cartProducts.map((product) => product.id);
   const cartCategories = new Set(cartProducts.flatMap(getCategories));
-  const recommendations = products
+  const recommendations = getAvailableProducts()
     .filter((product) => !cartIds.includes(product.id))
     .sort((first, second) => {
       const firstScore = getCategories(first).filter((category) => cartCategories.has(category)).length;
@@ -372,7 +386,9 @@ function setupCheckout() {
       total: getTotal(),
       observacao: "Este pedido e uma simulacao local. Nenhum dado e enviado para um banco de dados ou servico externo."
     };
+    const soldIds = [...new Set([...getSoldIds(), ...cartProducts.map((product) => product.id)])];
     saveOrder(order);
+    saveSoldIds(soldIds);
     saveCartIds([]);
     clearInterval(pixTimer);
     window.location.href = form.action;
@@ -406,7 +422,7 @@ async function loadProducts() {
     products = await response.json();
     setupFilters();
     setupLoadMore();
-    renderProducts(products, true);
+    renderProducts(getAvailableProducts(), true);
     renderProductDetail();
     renderCart();
     setupCheckout();
