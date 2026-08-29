@@ -50,9 +50,20 @@ function saveSoldIds(ids) {
   localStorage.setItem(SOLD_KEY, JSON.stringify(ids));
 }
 
+function isProductSold(productId) {
+  return getSoldIds().includes(productId);
+}
+
+function sortProductsForCatalog(productList) {
+  return [...productList].sort((first, second) => {
+    const firstSold = isProductSold(first.id) ? 1 : 0;
+    const secondSold = isProductSold(second.id) ? 1 : 0;
+    return firstSold - secondSold;
+  });
+}
+
 function getAvailableProducts() {
-  const soldIds = new Set(getSoldIds());
-  return products.filter((product) => !soldIds.has(product.id));
+  return sortProductsForCatalog(products);
 }
 
 function handleImageError(event) {
@@ -106,29 +117,36 @@ function renderProducts(list, resetCount = false) {
   const listEndMessage = document.querySelector("#list-end-message");
   if (!grid) return;
   if (resetCount) visibleProductCount = 9;
-  if (!list.length) {
+  const sortedList = sortProductsForCatalog(list);
+  if (!sortedList.length) {
     count.textContent = "0 jogos encontrados";
     grid.innerHTML = '<div class="empty-state"><h3>Nenhum jogo encontrado</h3><p>Tente outro termo ou gênero.</p></div>';
     if (loadMore) loadMore.hidden = true;
     if (listEndMessage) listEndMessage.hidden = true;
     return;
   }
-  const visibleProducts = list.slice(0, visibleProductCount);
-  count.textContent = visibleProducts.length === list.length
-    ? `${list.length} ${list.length === 1 ? "jogo encontrado" : "jogos encontrados"}`
-    : `${visibleProducts.length} de ${list.length} jogos`;
-  grid.innerHTML = visibleProducts.map((product, index) => `
-    <article class="product-card">
-      <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="${index < 4 ? "eager" : "lazy"}" decoding="async" onerror="handleImageError(event)"></a>
-      <div class="card-body">
-        <div class="card-meta"><span>${getCategories(product).join(" / ")}</span><span>${product.anoLancamento}</span></div>
-        <h3><a href="produto.html?id=${product.id}">${product.nome}</a></h3>
-        <p class="card-description">${product.descricao}</p>
-        <div class="card-footer"><span class="price">${formatPrice(product.preco)}</span><a class="cta" href="produto.html?id=${product.id}">Ver jogo</a></div>
-      </div>
-    </article>`).join("");
-  if (loadMore) loadMore.hidden = visibleProducts.length >= list.length;
-  if (listEndMessage) listEndMessage.hidden = visibleProducts.length < list.length;
+  const visibleProducts = sortedList.slice(0, visibleProductCount);
+  count.textContent = visibleProducts.length === sortedList.length
+    ? `${sortedList.length} ${sortedList.length === 1 ? "jogo encontrado" : "jogos encontrados"}`
+    : `${visibleProducts.length} de ${sortedList.length} jogos`;
+  grid.innerHTML = visibleProducts.map((product, index) => {
+    const soldOut = isProductSold(product.id);
+    return `
+      <article class="product-card ${soldOut ? "sold-out" : ""}">
+        <div class="product-card-top">
+          <a href="produto.html?id=${product.id}"><img class="product-image" src="${product.capa}" alt="Capa de ${product.nome}" width="460" height="215" loading="${index < 4 ? "eager" : "lazy"}" decoding="async" onerror="handleImageError(event)"></a>
+          ${soldOut ? '<span class="sold-badge">Esgotado</span>' : ""}
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>${getCategories(product).join(" / ")}</span><span>${product.anoLancamento}</span></div>
+          <h3><a href="produto.html?id=${product.id}">${product.nome}</a></h3>
+          <p class="card-description">${product.descricao}</p>
+          <div class="card-footer"><span class="price">${formatPrice(product.preco)}</span>${soldOut ? '<span class="sold-status">Esgotado</span>' : `<a class="cta" href="produto.html?id=${product.id}">Ver jogo</a>`}</div>
+        </div>
+      </article>`;
+  }).join("");
+  if (loadMore) loadMore.hidden = visibleProducts.length >= sortedList.length;
+  if (listEndMessage) listEndMessage.hidden = visibleProducts.length < sortedList.length;
 }
 
 function setupLoadMore() {
@@ -189,9 +207,10 @@ function renderProductDetail() {
   const detail = document.querySelector("#product-detail");
   if (!detail) return;
   if (!product) {
-    detail.innerHTML = '<div class="empty-state"><h1>Jogo não encontrado</h1><p>Este jogo já foi comprado e saiu da loja.</p><a class="cta" href="index.html">Voltar à loja</a></div>';
+    detail.innerHTML = '<div class="empty-state"><h1>Jogo não encontrado</h1><p>Este jogo não está disponível no catálogo.</p><a class="cta" href="index.html">Voltar à loja</a></div>';
     return;
   }
+  const isSoldOut = isProductSold(product.id);
   const gallery = [product.capa, ...(product.galeria || [])];
   detail.innerHTML = `
     <div class="detail-media">
@@ -200,16 +219,19 @@ function renderProductDetail() {
         ${gallery.map((image, index) => `<button class="gallery-thumb${index === 0 ? " active" : ""}" type="button" aria-label="Ver imagem ${index + 1} de ${product.nome}" data-image="${image}"><img src="${image}" alt="" width="1920" height="1080" loading="lazy" decoding="async" onerror="handleImageError(event)"></button>`).join("")}
       </div>
     </div>
-    <div class="detail-info"><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div><button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button><div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
+    <div class="detail-info"><a class="back-link" href="index.html">← Voltar para a loja</a><p class="eyebrow">${getCategories(product).join(" / ")} / ${product.anoLancamento}</p><h1>${product.nome}${isSoldOut ? '<span class="detail-sold-tag">Esgotado</span>' : ""}</h1><p class="detail-description">${product.descricao}</p><div class="detail-price">${formatPrice(product.preco)}</div>${isSoldOut ? '<div class="detail-sold-status">Este jogo já foi comprado e está esgotado.</div><button class="cta disabled" id="add-to-cart" type="button" disabled>Indisponível</button>' : '<button class="cta" id="add-to-cart" type="button">Adicionar ao Carrinho</button>'}<div class="specs"><div class="spec"><strong>Requisitos mínimos</strong><span>${product.requisitos.minimos}</span></div><div class="spec"><strong>Requisitos recomendados</strong><span>${product.requisitos.recomendados}</span></div></div></div>`;
   const mainImage = document.querySelector("#detail-main-image");
   document.querySelectorAll(".gallery-thumb").forEach((thumbnail) => thumbnail.addEventListener("click", () => {
     mainImage.src = thumbnail.dataset.image;
     document.querySelectorAll(".gallery-thumb").forEach((item) => item.classList.toggle("active", item === thumbnail));
   }));
-  document.querySelector("#add-to-cart").addEventListener("click", () => {
-    addToCart(product.id);
-    window.location.href = "carrinho.html";
-  });
+  const addButton = document.querySelector("#add-to-cart");
+  if (addButton && !addButton.disabled) {
+    addButton.addEventListener("click", () => {
+      addToCart(product.id);
+      window.location.href = "carrinho.html";
+    });
+  }
 }
 
 function renderCart() {
@@ -242,7 +264,7 @@ function renderRecommendations(cartProducts) {
   const cartIds = cartProducts.map((product) => product.id);
   const cartCategories = new Set(cartProducts.flatMap(getCategories));
   const recommendations = getAvailableProducts()
-    .filter((product) => !cartIds.includes(product.id))
+    .filter((product) => !cartIds.includes(product.id) && !isProductSold(product.id))
     .sort((first, second) => {
       const firstScore = getCategories(first).filter((category) => cartCategories.has(category)).length;
       const secondScore = getCategories(second).filter((category) => cartCategories.has(category)).length;
