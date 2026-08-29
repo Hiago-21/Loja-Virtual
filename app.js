@@ -1,6 +1,6 @@
-const CART_KEY = "steamgrid-cart";
-const ORDER_KEY = "steamgrid-last-order";
-const THEME_KEY = "steamgrid-theme";
+const CART_KEY = "gamegrid-cart";
+const ORDER_KEY = "gamegrid-last-order";
+const THEME_KEY = "gamegrid-theme";
 let products = [];
 let selectedGenre = "Todos";
 let visibleProductCount = 9;
@@ -298,7 +298,7 @@ function setupCheckout() {
     }
     if (paymentSelect.value === "pix") {
       let secondsLeft = 300;
-      details.innerHTML = `<div class="payment-panel pix-panel"><h2>Pagamento via Pix</h2><div class="qr-code" role="img" aria-label="QR Code genérico para pagamento Pix"><span></span></div><p class="payment-code">PIX-GENERICO-STEAMGRID-2026</p><p>Escaneie o código ou use o código acima.</p><div class="pix-timer"><span>Tempo para pagar</span><strong id="pix-countdown">05:00</strong></div></div>`;
+      details.innerHTML = `<div class="payment-panel pix-panel"><h2>Pagamento via Pix</h2><div class="qr-code" role="img" aria-label="QR Code genérico para pagamento Pix"><span></span></div><p class="payment-code">PIX-GENERICO-GAMEGRID-2026</p><p>Escaneie o código ou use o código acima.</p><div class="pix-timer"><span>Tempo para pagar</span><strong id="pix-countdown">05:00</strong></div></div>`;
       const countdown = details.querySelector("#pix-countdown");
       pixTimer = setInterval(() => {
         secondsLeft -= 1;

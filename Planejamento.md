@@ -1,4 +1,4 @@
-# Planejamento da SteamGrid
+# Planejamento da GameGrid
 
 Checklist de acompanhamento da construção e da entrega da loja virtual.
 
@@ -13,7 +13,7 @@ Checklist de acompanhamento da construção e da entrega da loja virtual.
 ### Já implementei
 
 - [x] Defini o tema da loja: jogos digitais para PC.
-- [x] Criei a identidade da loja com o nome SteamGrid.
+- [x] Criei a identidade da loja com o nome GameGrid.
 - [x] Separei a estrutura em HTML, CSS, JavaScript e JSON.
 - [x] Mantive os produtos fora do HTML para a vitrine ser montada pelo JavaScript.
 - [x] Criei as páginas da loja, produto, carrinho, checkout, confirmação e como-fiz.

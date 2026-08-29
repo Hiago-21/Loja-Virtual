@@ -1,4 +1,4 @@
-"Atue como um Desenvolvedor Front-end Sênior. Preciso construir uma loja virtual estática de jogos de PC (Steam) para um desafio de Bootcamp. O nome do projeto será SteamGrid (ou outro nome de sua escolha).
+"Atue como um Desenvolvedor Front-end Sênior. Preciso construir uma loja virtual estática de jogos de PC para um desafio de Bootcamp. O nome do projeto será GameGrid.
 
 1. Identidade Visual (CSS):
 Crie um arquivo style.css com variáveis de cores (CSS Variables). O tema padrão (Claro) deve ser Branco e Laranja. Implemente uma classe .dark-mode (Tema Escuro) usando Cinza Escuro e Azul. Crie um botão (toggle) no header para alternar entre os temas.
