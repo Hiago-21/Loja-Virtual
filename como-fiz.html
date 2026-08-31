@@ -28,10 +28,52 @@
   <main class="page-shell content-narrow">
     <p class="eyebrow">Processo</p>
     <h1>Como foi pensado.</h1>
-    <p class="hero-copy">Este espaço pode receber o vídeo com o passo a passo da criação e apresentação da loja.</p>
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/7IDFtGlCGeg" title="Como criei a GameGrid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="hero-copy">A criação da GameGrid passou por identidade visual, experiência de compra, otimização e planejamento para crescer em escala.</p>
+
+    <div class="video-shell" aria-label="Vídeo explicativo sobre o processo da GameGrid">
+      <iframe src="https://www.youtube.com/embed/7IDFtGlCGeg" title="Como criei a GameGrid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+    <div class="video-actions">
+      <a class="youtube-button" href="https://www.youtube.com/watch?v=7IDFtGlCGeg" target="_blank" rel="noopener noreferrer">Assistir no YouTube</a>
+    </div>
+
+    <section class="story-summary" aria-labelledby="resumo-video-titulo">
+      <p class="eyebrow">Resumo</p>
+      <h2 id="resumo-video-titulo">O que foi falado no vídeo</h2>
+
+      <div class="summary-grid">
+        <article class="summary-card">
+          <span class="summary-tag">Loja</span>
+          <h3>O que foi construído e como o código foi organizado</h3>
+          <p>O projeto foi pensado como uma mini-loja de jogos com identidade própria, nome, tema visual e estrutura separada em HTML, CSS, JavaScript e dados em JSON. A ideia foi mostrar como a loja funciona de ponta a ponta, com páginas de vitrine, produto, carrinho, checkout e feedback.</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-tag">Headless</span>
+          <h3>Por que o catálogo ficou separado do front</h3>
+          <p>Os produtos estão em products.json e são carregados via fetch no JavaScript. Isso representa o conceito de headless commerce: o front-end não fica preso ao conteúdo e pode consumir os dados de forma mais flexível, reutilizável e fácil de evoluir.</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-tag">AWS</span>
+          <h3>Como a loja entraria na nuvem</h3>
+          <p>Foi explicado o caminho do clique: navegador → CDN → origem. Em uma arquitetura na AWS, o CloudFront ajuda a entregar conteúdo mais rápido, enquanto o cache reduz a carga no servidor e melhora a performance quando há milhares de acessos simultâneos.</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-tag">Lighthouse</span>
+          <h3>Teste de performance e melhorias</h3>
+          <p>O vídeo também mostra a auditoria do Lighthouse, com os scores da loja e a análise honesta do que precisa melhorar primeiro. Isso ajuda a priorizar itens como performance, acessibilidade, boas práticas e navegação.</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-tag">IA</span>
+          <h3>Onde a inteligência artificial entra</h3>
+          <p>Foi discutido como uma IA poderia melhorar a experiência com busca inteligente, recomendações personalizadas e atendimento via chat no próprio site. Além disso, o vídeo menciona os desafios reais da construção e o que foi mais difícil de implementar na prática.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
